@@ -1,0 +1,190 @@
+/* Variables y ajustes generales */
+:root{
+    /* Grosor 400 fuenteTitulos */
+    --fuenteTitulos: 'Merriweather', serif; 
+    /* Grosor 400 Regular e Italic*/
+    --fuenteTitulosMenores: 'Prompt', sans-serif;
+    /* Regular 400 */
+    --fuenteParrafos: 'EB Garamond', serif;
+
+    --colorPrincipal: #0092FF;
+    --colorPrincipalOscuro: #003761;
+    --colorSecundario:#FF9900;
+    --colorNegro: #000000;
+    --colorBlanco: #ffffff;
+
+    --cursiva: italic;
+}
+
+/* ----------------------------- Reglas de estilo para el main  --------------------------------- */
+
+#mainLibreria{
+    flex-direction: column;
+}
+
+main>h2{
+    display: block;
+    margin-top:4vh;
+    margin-left:5vw;
+    margin-bottom: 2vh;
+    font-family: var(--fuenteTitulos);
+    font-size: 1.6rem;
+}
+
+/* Reglas de estilo para localizacionDiv */
+
+.localizacionDiv{
+    width:90vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    padding-top:3vh;
+    padding-bottom:3vh;
+    
+    margin:auto;
+}
+
+
+#descripcionLocalizacion{
+    padding-left:5vw;
+    padding-right:5vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    text-wrap: wrap;
+    text-align: justify;
+
+}
+
+#descripcionLocalizacion>h5 {
+    font-family:var(--fuenteTitulosMenores);
+    font-size: 1.6rem;
+
+    margin-top:1vh;
+    margin-bottom:1vh;
+}
+
+#descripcionLocalizacion>h6 {
+    font-family:var(--fuenteTitulosMenores);
+    font-style: var(--cursiva);
+    font-size: 1.4rem;
+    
+    margin-top:1vh;
+    margin-bottom:1vh;
+}
+
+#descripcionLocalizacion li, #descripcionLocalizacion>p{
+    font-family: var(--fuenteParrafos);
+    font-size: 1.1rem;
+
+    margin-top:0.5vh;
+}
+
+#descripcionLocalizacion li{
+    margin-left: 3vw;
+}
+
+/*---------------------------------------- Estilos para tablet ----------------------------------------*/
+
+@media (768px <= width <= 1024px){
+    
+    .localizacionDiv{
+        flex-direction: column;
+    }
+
+    #descripcionLocalizacion{
+        margin-bottom: 8vh;
+    }
+}
+
+/*---------------------------------------- Estilos para móviles grandes ----------------------------------------*/
+
+#mapaDivMovil{
+    display:none;
+}
+
+#mapaDivMovilPeque{
+    display:none;
+}
+
+@media (500px <= width < 768px){
+    
+    main>h2{
+        font-size: 1.4rem;
+    }
+
+    .localizacionDiv{
+        flex-direction: column;
+    }
+
+    #descripcionLocalizacion{
+        margin-bottom: 8vh;
+    }
+
+    #descripcionLocalizacion>h5 {
+        font-size: 1.3rem;
+
+    }
+    
+    #descripcionLocalizacion>h6 {
+        font-size: 1.1rem;
+
+    }
+    
+    #descripcionLocalizacion li, #descripcionLocalizacion>p{
+        font-size: 1rem;
+    }
+
+    #mapaDiv{
+        display:none;
+    }
+
+    #mapaDivMovil{
+        display:block;
+    }
+}
+
+/*---------------------------------------- Estilos para móviles pequeños ----------------------------------------*/
+
+@media (width < 500px){
+    
+    main>h2{
+        font-size: 1.3rem;
+    }
+
+    .localizacionDiv{
+        flex-direction: column;
+    }
+
+    #descripcionLocalizacion{
+        margin-bottom: 8vh;
+    }
+
+    #descripcionLocalizacion>h5 {
+        font-size: 1.2rem;
+
+    }
+    
+    #descripcionLocalizacion>h6 {
+        font-size: 1rem;
+
+    }
+    
+    #descripcionLocalizacion li, #descripcionLocalizacion>p{
+        font-size: 1rem;
+    }
+
+    #mapaDiv{
+        display:none;
+    }
+
+    #mapaDivMovilPeque{
+        display:block;
+    }
+}

@@ -1,0 +1,420 @@
+
+/* Variables y ajustes generales */
+:root{
+    /* Grosor 400 fuenteTitulos */
+    --fuenteTitulos: 'Merriweather', serif; 
+    /* Grosor 400 Regular e Italic*/
+    --fuenteTitulosMenores: 'Prompt', sans-serif;
+    /* Regular 400 */
+    --fuenteParrafos: 'EB Garamond', serif;
+
+    --colorPrincipal: #0092FF;
+    --colorPrincipalOscuro: #003761;
+    --colorSecundario:#FF9900;
+    --colorNegro: #000000;
+    --colorBlanco: #ffffff;
+
+    --cursiva: italic;
+}
+
+/* ----------------------------- Reglas de estilo para el main  --------------------------------- */
+
+#mainInicioSesion{
+    padding:2vw;
+}
+
+main h2{
+    display: block;
+    margin-left: 5vw;
+    margin-top:4vh;
+    margin-bottom: 4vh;
+
+    font-family: var(--fuenteTitulos);
+    font-size: 1.6rem;
+}
+
+#tituloRegistro{
+    width:48vw;
+
+}
+#sesionDivContenedor{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.inputTextoDiv{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 2vw;
+    margin-left:2vw;
+}
+
+.inputTextoDiv label{
+    margin-bottom:1.5vh;
+
+    font-family: var(--fuenteTitulosMenores);
+    font-size:1rem;
+}
+
+.inputTextoDiv input{
+    width:22vw;
+    border: 2px var(--colorNegro) solid;
+    border-radius:5px;
+    padding:0.5vw;
+    margin-bottom: 3vh;
+
+    font-family: var(--fuenteParrafos);
+    font-size: 1rem;
+    background-color: var(--colorBlanco);
+}
+@media (hover:hover){
+    form input:hover, form textarea:hover{
+        border: 2px var(--colorPrincipal) solid;
+    }
+}
+
+/* Ajustes específicos del formulario de Inicio de Sesión */
+
+#formularioInicio{
+    width:30vw;
+}
+
+#botonInicio{
+    width: 8vw;
+    border-radius: 5px;
+    font-size:1rem;
+    margin-left:15vw;
+    padding:0.3vw;
+    background-color: var(--colorBlanco);
+}
+
+@media (hover:hover){
+    #botonInicio:hover{
+        border: 2px var(--colorNegro) solid;
+        background-color: var(--colorPrincipal);
+        color:var(--colorBlanco);
+        cursor:pointer;
+    }
+}
+
+#formularioInicio a{
+    text-decoration: none;
+    font-family: var(--fuenteTitulosMenores);
+    font-size: 0.8rem;
+    margin-top: 4vh;
+    margin-left: 2vw;
+}
+
+@media (hover:hover){
+    #formularioInicio a:hover{
+        color: var(--colorPrincipal);
+    }
+}
+
+/* Ajustes específicos del formulario de Registro */
+
+#formularioRegistro{
+    width:60vw;
+    border-left: 2px black solid;
+}
+
+/* Género */
+
+.inputRadioDiv{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 2vw;
+    margin-left:2vw;
+    width:26vw;
+}
+
+#tituloGenero{
+    margin-bottom:1.5vh;
+
+    font-family: var(--fuenteTitulosMenores);
+    font-size:1rem;
+}
+
+#opcionesGenero{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 30vw;
+}
+
+#opcionesGenero label{
+    margin-left:0.3vw;
+    font-family: var(--fuenteParrafos);
+    font-size:1rem;
+
+}
+#opcionesGenero input{
+    margin-left:1vw;
+}
+
+/* Fecha de nacimiento */
+
+.inputFechaDiv{
+    width:30vw;
+}
+
+.inputFechaDiv label{
+    font-family: var(--fuenteTitulosMenores);
+    font-size: 0.95rem;
+    margin-right: 0.5vw;
+}
+
+.inputFechaDiv input{
+    padding:0.2vw;
+    border-radius:5px;
+    font-family: var(--fuenteParrafos);
+    font-size: 0.9rem;
+}
+
+#botonRegistro{
+    width: 8vw;
+    border-radius: 5px;
+    font-size:1rem;
+    margin-left:40vw;
+    margin-top:5vh;
+    padding:0.3vw;
+    background-color: var(--colorBlanco);
+}
+
+@media (hover:hover){
+    #botonRegistro:hover{
+        border: 2px var(--colorNegro) solid;
+        background-color: var(--colorPrincipal);
+        color:var(--colorBlanco);
+        cursor:pointer;
+    }
+}
+
+/*---------------------------------------- Estilos para tablet ----------------------------------------*/
+
+@media (768px <= width <= 1024px){
+
+    #mainInicioSesion{
+        flex-wrap: wrap;
+    }
+
+    #formularioInicio>h2{
+        margin-left:0;
+    }
+
+    .inputTextoDiv input{
+        width:30vw;
+    }
+
+    #formularioInicio{
+        width: 50vw;
+        flex-direction: column;
+        margin-bottom:10vh;
+        border: 2px var(--colorNegro) solid;
+        border-radius: 10px;
+        padding:2vw;
+    }
+
+    #formularioRegistro{
+        width: 85vw;
+        border-left: none;
+        border: 2px var(--colorNegro) solid;
+        border-radius: 10px;
+        padding:2vw;
+
+    }
+    .inputRadioDiv{
+        width:34vw;
+    }
+
+    #opcionesGenero{
+        width:35vw;
+    }
+
+    #opcionesGenero label{
+        font-size:0.9rem;
+    
+    }
+
+    .inputFechaDiv{
+        width:44vw;
+    }
+
+    .inputFechaDiv label{
+        margin-right: 1vw;
+    }
+
+    #botonInicio{
+        margin-left: 0;
+    }
+
+    #botonRegistro{
+        margin-left:36vw;
+        width:6rem;
+    }
+
+}
+
+/*---------------------------------------- Estilos para móviles grandes ----------------------------------------*/
+
+@media (540px <= width < 768px){
+
+    #mainInicioSesion{
+        flex-wrap: wrap;
+    }
+
+    #formularioInicio>h2{
+        margin-left:0;
+    }
+
+    .inputTextoDiv input{
+        width:35vw;
+    }
+
+    #formularioInicio{
+        width: 60vw;
+        flex-direction: column;
+        margin-top: 3vh;
+        margin-bottom:10vh;
+        border: 2px var(--colorNegro) solid;
+        border-radius: 10px;
+        padding:2vw;
+    }
+
+    #botonInicio{
+        width:5rem;
+        margin-left: 0;
+    }
+
+    #formularioRegistro{
+        width: 90vw;
+        border-left: none;
+        border: 2px var(--colorNegro) solid;
+        border-radius: 10px;
+        padding:2vw;
+
+    }
+    .inputRadioDiv{
+        width:42vw;
+        margin-right:0;
+    }
+
+    #tituloGenero{
+        width:35vw;
+        text-align: center;
+    }
+
+    #opcionesGenero{
+        width:42vw;
+    }
+
+    #opcionesGenero label{
+        font-size:0.9rem;
+    
+    }
+
+    .inputFechaDiv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        width:36vw;
+    }
+
+
+    #botonRegistro{
+        margin-left:36vw;
+        width:6rem;
+    }
+
+}
+
+/*---------------------------------------- Estilos para móviles pequeños ----------------------------------------*/
+
+@media (width < 540px){
+
+    #mainInicioSesion{
+        flex-wrap: wrap;
+    }
+
+    #formularioInicio>h2{
+        margin-left:0;
+    }
+
+    .inputTextoDiv input{
+        width:35vw;
+    }
+
+    #formularioInicio{
+        width: 60vw;
+        flex-direction: column;
+        margin-top: 3vh;
+        margin-bottom:10vh;
+        border: 2px var(--colorNegro) solid;
+        border-radius: 10px;
+        padding:2vw;
+    }
+
+    #botonInicio{
+        width:5rem;
+        margin-left: 0;
+    }
+
+    #formularioRegistro{
+        width: 90vw;
+        border-left: none;
+        border: 2px var(--colorNegro) solid;
+        border-radius: 10px;
+        padding:2vw;
+
+    }
+    .inputRadioDiv{
+        width:90vw;
+        margin-right:0;
+    }
+
+    #tituloGenero{
+        width:70vw;
+        text-align: center;
+    }
+
+    #opcionesGenero{
+        width:90vw;
+    }
+
+    #opcionesGenero label{
+        font-size:0.9rem;
+        margin-right:auto;
+        margin-left: auto;
+    
+    }
+
+    .inputFechaDiv{
+        width:90vw;
+        margin-top: 3vh;
+        margin-left:2vw;
+    }
+
+
+    #botonRegistro{
+        margin-left:36vw;
+        width:6rem;
+    }
+
+}

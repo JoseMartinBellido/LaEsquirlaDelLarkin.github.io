@@ -1,0 +1,379 @@
+/* Variables y ajustes generales */
+:root{
+    /* Grosor 400 fuenteTitulos */
+    --fuenteTitulos: 'Merriweather', serif; 
+    /* Grosor 400 Regular e Italic*/
+    --fuenteTitulosMenores: 'Prompt', sans-serif;
+    /* Regular 400 */
+    --fuenteParrafos: 'EB Garamond', serif;
+
+    --colorPrincipal: #0092FF;
+    --colorPrincipalOscuro: #003761;
+    --colorSecundario:#FF9900;
+    --colorNegro: #000000;
+    --colorBlanco: #ffffff;
+
+    --cursiva: italic;
+}
+
+/* ----------------------------- Reglas de estilo para el main  --------------------------------- */
+#mainContacto{
+    flex-direction: column;
+}
+
+main>h2{
+    display: block;
+    margin-top:4vh;
+    margin-left:5vw;
+    margin-bottom: 5vh;
+    font-family: var(--fuenteTitulos);
+    font-size: 1.6rem;
+}
+
+#contactoDivContenedor{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin-left:5vw;
+}
+
+/* Vías de contacto */
+
+.viasContacto{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding:1vw;
+    font-family: var(--fuenteParrafos);
+    font-size: 1.2rem;
+    
+}
+
+.descripcionContacto{
+    text-wrap: wrap;
+    width:20vw;
+}
+
+.iconoContacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--colorPrincipal);
+    width:2.8vw;
+    height:2.8vw;
+    margin-right:2vw;
+    border-radius: 50%;
+}
+
+.iconoContacto>img{
+    width:1.8vw;
+}
+
+/* Ajuste de los enlaces a las redes sociales y acciones con hover */
+
+.redesSociales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: row;
+
+    margin-top:5vh;
+}
+
+#iconoFacebookB{
+    display:block;
+}
+
+#iconoFacebookN{
+    display:none;
+}
+
+@media (hover:hover){
+    #enlaceRSF:hover #iconoFacebookB{
+        display:none
+    }
+
+    #enlaceRSF:hover #iconoFacebookN{
+        display:block
+    }
+}
+
+#iconoInstagramB{
+    display:block;
+}
+
+#iconoInstagramN{
+    display:none;
+}
+
+@media (hover:hover){
+    #enlaceRSI:hover #iconoInstagramB{
+        display:none
+    }
+
+    #enlaceRSI:hover #iconoInstagramN{
+        display:block
+    }
+}
+
+#iconoTwitterB{
+    display:block;
+}
+
+#iconoTwitterN{
+    display:none;
+}
+@media (hover:hover){
+    #enlaceRST:hover #iconoTwitterB{
+        display:none
+    }
+
+    #enlaceRST:hover #iconoTwitterN{
+        display:block
+    }
+}
+
+/* Formulario */
+form{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left:5vw;
+    border-left: 2px black solid;
+}
+
+
+form input, form textarea{
+    width:40vw;
+    border: 2px var(--colorNegro) solid;
+    padding:0.5vw;
+    margin-bottom: 3vh;
+    margin-left:5vw;
+
+    font-family: var(--fuenteParrafos);
+    font-size: 1.2rem;
+    background-color: var(--colorBlanco);
+}
+@media (hover:hover){
+    form input:hover, form textarea:hover{
+        border: 2px var(--colorPrincipal) solid;
+    }
+}
+
+/* Botón de enviar */
+
+#botonEnviar{
+    width: 8vw;
+    border-radius: 5px;
+    font-size:1.1rem;
+    margin-left:36.5vw;
+}
+
+@media (hover:hover){
+    #botonEnviar:hover{
+        border: 2px var(--colorNegro) solid;
+        background-color: var(--colorPrincipal);
+        color:var(--colorBlanco);
+        cursor:pointer;
+    }
+}
+
+/*---------------------------------------- Estilos para tablet ----------------------------------------*/
+
+@media (768px <= width <= 1024px){
+    
+    main>h2{
+        margin-bottom: 3vh;
+    }
+
+    .iconoContacto, .contenedorIconos{
+        width:2.4rem;
+        height:2.4rem;
+    }
+
+    .iconoContacto>img, .contenedorIconos>img{
+        width:1.6rem;
+    }
+
+    .viasContacto{
+        font-size: 1rem;
+    }
+
+    .descripcionContacto{
+        width:25vw;
+    }
+
+    form input, form textarea{
+        font-size: 1rem;
+    }
+
+    #botonEnviar{
+        width: 6rem;
+        font-size: 1rem;
+        margin-left:35vw;
+    }
+
+    
+}
+
+/*---------------------------------------- Estilos para móviles grandes ----------------------------------------*/
+
+@media (540px <= width < 768px){
+    main>h2{
+        width: 40vw;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+
+        margin-bottom: 3vh;
+    }
+    
+    #contactoDivContenedor{
+        flex-direction: column;
+    }
+
+    article{
+        margin-left: 10vw;
+    }
+
+    .descripcionContacto{
+        width: 70vw;
+        margin-right: 10vw;
+    }
+
+    .descripcionContacto p{
+        width:70vw;
+    }
+
+    .redesSociales{
+        width:80vw;
+        margin-top:3vh;
+        margin-bottom: 8vh;
+    }
+
+
+    .iconoContacto, .contenedorIconos{
+        width:2.4rem;
+        height:2.4rem;
+    }
+
+    .iconoContacto>img, .contenedorIconos>img{
+        width:1.6rem;
+    }
+
+    .viasContacto{
+        font-size: 1rem;
+    }
+
+    .descripcionContacto{
+        width:25vw;
+    }
+
+    .iconoContacto, .descripcionContacto{
+        margin-bottom:2vh;
+    }
+
+    form{
+        margin-right:5vw;
+        border-left: none;
+    }
+    
+    
+    form input, form textarea{
+        width:80vw;
+        font-size: 1rem;
+        margin-left:0;
+    }
+
+    #botonEnviar{
+        width: 6rem;
+        font-size: 1rem;
+        margin-left:67vw;
+    }
+
+    
+}
+
+/*---------------------------------------- Estilos para móviles pequeños ----------------------------------------*/
+
+@media (width < 540px){
+    main>h2{
+        width: 40vw;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+
+        margin-bottom: 3vh;
+    }
+    
+    #contactoDivContenedor{
+        flex-direction: column;
+    }
+
+    article{
+        margin-left: 10vw;
+    }
+
+    .descripcionContacto{
+        width: 70vw;
+        margin-right: 10vw;
+    }
+
+    .descripcionContacto p{
+        width:70vw;
+    }
+
+    .redesSociales{
+        width:80vw;
+        margin-top:3vh;
+        margin-bottom: 8vh;
+        justify-content: space-evenly;
+    }
+
+
+    .iconoContacto, .contenedorIconos{
+        width:2.4rem;
+        height:2.4rem;
+    }
+
+    .iconoContacto>img, .contenedorIconos>img{
+        width:1.6rem;
+    }
+
+    .iconoContacto, .descripcionContacto{
+        margin-bottom:2vh;
+    }
+
+    .viasContacto{
+        font-size: 1rem;
+    }
+
+    .descripcionContacto{
+        width:25vw;
+    }
+
+    form{
+        margin-right:5vw;
+        border-left: none;
+    }
+    
+    
+    form input, form textarea{
+        width:80vw;
+        font-size: 1rem;
+        margin-left:0;
+    }
+
+    #botonEnviar{
+        width: 6rem;
+        font-size: 1rem;
+        margin-left:63vw;
+    }
+
+    
+}

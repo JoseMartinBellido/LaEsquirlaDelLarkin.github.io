@@ -1,0 +1,51 @@
+/* Variables y ajustes generales */
+:root{
+    /* Grosor 400 fuenteTitulos */
+    --fuenteTitulos: 'Merriweather', serif; 
+    /* Grosor 400 Regular e Italic*/
+    --fuenteTitulosMenores: 'Prompt', sans-serif;
+    /* Regular 400 */
+    --fuenteParrafos: 'EB Garamond', serif;
+
+    --colorPrincipal: #0092FF;
+    --colorPrincipalOscuro: #003761;
+    --colorSecundario:#FF9900;
+    --colorNegro: #000000;
+    --colorBlanco: #ffffff;
+
+    --cursiva: italic;
+}
+
+/* Hoja de estilos para un futuro carrito de la compra. Ahora mismo solo muestra el mensaje marcado en el html*/
+
+#mainCarritoCompra{
+    height:75vh;
+    width:98vw;
+}
+
+h2{
+    font-family: var(--fuenteTitulosMenores);
+    font-size: 1.2rem;
+    padding: 1vw;
+    margin:5vh 5vw;
+    width:50vw;
+    text-wrap: wrap;
+    text-align: justify;
+    line-height: 6vh;
+    border: 3px var(--colorNegro) solid;
+    border-radius:5px;
+}
+
+@media ( width <= 768px){
+    
+    #mainCarritoCompra{
+        height:115vh;
+        width:98vw;
+    }
+    
+    
+    h2{
+        font-size: 1rem;
+    }
+
+}

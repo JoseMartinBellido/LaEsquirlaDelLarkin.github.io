@@ -1,0 +1,253 @@
+:root{
+    /* Grosor 400 fuenteTitulos */
+    --fuenteTitulos: 'Merriweather', serif; 
+    /* Grosor 400 Regular e Italic*/
+    --fuenteTitulosMenores: 'Prompt', sans-serif;
+    /* Regular 400 */
+    --fuenteParrafos: 'EB Garamond', serif;
+
+    --colorPrincipal: #0092FF;
+    --colorPrincipalOscuro: #003761;
+    --colorSecundario:#FF9900;
+    --colorNegro: #000000;
+    --colorBlanco: #ffffff;
+
+    --cursiva: italic;
+}
+
+/*---------------------------------------- Ajustes para el main de actividades ----------------------------------------*/
+
+#mainActividades{
+    flex-direction: column;
+}
+
+main>h2{
+    display: block;
+    margin-top:5vh;
+    margin-left:5vw;
+    font-family: var(--fuenteTitulos);
+    font-size: 1.6rem;
+}
+
+#contenedorActividades{
+    width:90vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top:3vw;
+    padding-bottom:3vw;
+    
+    margin:auto;
+
+}
+
+.actividadDiv{
+    width: 40vw;
+    height:auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    border: 2px var(--colorNegro) solid;
+    border-radius: 5px;
+    background-color: var(--colorPrincipal);
+    color:var(--colorBlanco);
+    padding:1.5vw;
+    margin: auto;
+
+    margin-bottom:8vh;
+}
+
+.actividadDiv h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fuenteTitulosMenores);
+    font-size: 1.2rem;
+    height:6vw;
+}
+
+.actividadDiv>h4{
+    font-family: var(--fuenteTitulosMenores);
+    font-style: var(--cursiva);
+    font-size:1rem;
+    margin:1vh 0;
+}
+
+.actividadDiv>p{
+    text-align: justify;
+    text-wrap: wrap;
+
+    font-family: var(--fuenteParrafos);
+
+    height:10vw;
+}  
+
+.actividadImagenDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.actividadImagenDiv>img{
+    width: 75%;
+    height:auto;
+    border: 2px var(--colorBlanco) solid;
+    border-radius: 5px;
+
+}
+
+/* Div enlacesPaginas para enlazar con más páginas en la búsqueda o en las actividades*/
+
+.enlacesPaginas{
+   width:98vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.enlacesPaginas, .enlacesPaginas a{
+    text-decoration: none;
+    color: var(--colorNegro);
+    font-family: var(--fuenteParrafos);
+    font-size:1.2rem;
+}
+
+.enlacesPaginas a{
+    margin-right: 0.3vw;
+}
+
+
+
+#paginaMarcada{
+    color: var(--colorPrincipal);
+}
+
+/*---------------------------------------- Estilos para tablet grande o pantallas pequeñas de ordenador ----------------------------------------*/
+
+@media (1024px <= width <= 1240px){
+    .actividadDiv h3{
+        font-size: 1.6vw;
+        height:6vw;
+    }
+    
+    .actividadDiv>h4{
+        font-size:1.3vw;
+    }
+    
+    .actividadDiv>p{
+        height:15vw;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }  
+}
+
+/*---------------------------------------- Estilos para tablet  ----------------------------------------*/
+
+@media (768px <= width < 1024px){
+    .actividadDiv{
+        width: 80vw;
+    }
+
+    .actividadImagenDiv>img{
+        width:65%;
+    }
+
+    .actividadDiv h3, .actividadDiv>h4{
+        margin-left: 2vw;
+    }
+    
+    .actividadDiv h3{
+        font-size:2vw;
+        height:6vw;
+    }
+
+    .actividadDiv>h4{
+        font-size:1.6vw;
+    }
+
+    .actividadDiv>p{
+        height:9rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-right:2vw;
+        margin-left: 2vw;
+    }  
+}
+
+/*---------------------------------------- Estilos para móviles grandes ----------------------------------------*/
+
+@media (500px <= width < 768px){
+    .actividadDiv{
+        width: 90vw;
+    }
+
+    .actividadImagenDiv>img{
+        width:65%;
+    }
+
+    .actividadDiv h3, .actividadDiv>h4{
+        margin-left: 2vw;
+    }
+    
+    .actividadDiv h3{
+        font-size:3vw;
+        height:10vw;
+    }
+
+    .actividadDiv>h4{
+        font-size:2.2vw;
+    }
+
+    .actividadDiv>p{
+        height:10rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-right:2vw;
+        margin-left: 2vw;
+    }  
+}
+
+/*---------------------------------------- Estilos para móviles pequeños ----------------------------------------*/
+
+@media (width < 500px){
+    .actividadDiv{
+        width: 90vw;
+    }
+
+    .actividadImagenDiv>img{
+        width:65%;
+    }
+
+    .actividadDiv h3, .actividadDiv>h4{
+        margin-left: 2vw;
+    }
+    
+    .actividadDiv h3{
+        font-size:5vw;
+        height:18vw;
+    }
+
+    .actividadDiv>h4{
+        font-size:4vw;
+    }
+
+    .actividadDiv>p{
+        font-size:1rem; 
+        height:17rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-right:2vw;
+        margin-left: 2vw;
+    }  
+}

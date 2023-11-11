@@ -1,0 +1,367 @@
+/* Variables y ajustes generales */
+:root{
+    /* Grosor 400 fuenteTitulos */
+    --fuenteTitulos: 'Merriweather', serif; 
+    /* Grosor 400 Regular e Italic*/
+    --fuenteTitulosMenores: 'Prompt', sans-serif;
+    /* Regular 400 */
+    --fuenteParrafos: 'EB Garamond', serif;
+
+    --colorPrincipal: #0092FF;
+    --colorPrincipalOscuro: #003761;
+    --colorSecundario:#FF9900;
+    --colorNegro: #000000;
+    --colorBlanco: #ffffff;
+
+    --cursiva: italic;
+}
+
+/* Página destinada a la creación de estilos para los productos */
+
+/*---------------------------------------- Ajustes div que ordena la Página ----------------------------------------*/
+
+.ordenProductosDiv{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    margin: 3vh 5vw 2vh 0;
+}
+
+.ordenProductosDiv>p{
+    font-family: var(--fuenteParrafos);
+    font-size:1.1rem;
+}
+
+.ordenProductosSelect{
+    border: 1px var(--colorNegro) solid;
+    border-radius: 5px;
+    padding:0.3vw;
+    margin-left: 1vw;
+}
+
+/*---------------------------------------- Ajustes main ----------------------------------------*/
+
+#mainIndex{
+    flex-direction: column;
+}
+
+aside{
+    width: 15vw;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:80vw;
+}
+
+/*---------------------------------------- Ajustes aside ----------------------------------------*/
+
+.asideForm>h2{
+    font-size: 1.6rem;
+    font-family: var(--fuenteTitulosMenores);
+    margin-bottom: 1vh;
+    margin-left:2vw;
+}
+
+.asideForm{
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+/* Filtrado por nombre de autor o de título */
+
+.filtroDiv{
+    display:flex;
+    flex-direction: column;
+    margin-left: 2vw;
+    padding: 0.3vw;
+}
+
+.filtroLabel, .filtroInput{
+    display:block;
+}
+
+.filtroLabel{
+    font-family: var(--fuenteTitulosMenores);
+    font-size: 1rem;
+    margin-top:0.6vh;
+    margin-bottom:0.5vh;
+}
+
+
+.filtroInput{
+    border: 2px var(--colorNegro) solid;
+    width: 12vw;
+    padding: 0.5vh 1vw;
+}
+@media (hover:hover){
+    .filtroInput:hover, .filtroInput:focus{
+        border:2px var(--colorPrincipal) solid;
+    }
+}
+
+/* Filtrado por características */
+
+.asideForm>h3{
+    font-family:var(--fuenteTitulosMenores);
+    margin-top:2vh;
+    font-size: 1.1rem;
+    margin-left:2vw;
+    margin-bottom:2vh;
+}
+
+
+.checkboxDiv{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    padding:0.3vw;
+    margin-top: 1vh;
+}
+
+.checkboxDiv>input{
+    margin-right: 1vw;
+    width:1.2vw;
+    height:1.2vw;
+}
+
+.checkboxDiv>label{
+    font-size:1.1rem;
+    font-family: var(--fuenteParrafos);
+    font-weight: 700;
+}
+
+/* Filtrado por precio */
+
+.filtroDivPrecio{
+    margin-left: 2vw;
+}
+
+/* Ajustes de los divs para los productos y todo el contenido */
+
+#destacados, #nuevosLanzamientos, .productos{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding: 0.5vw;
+    border-radius:5px;
+}
+
+#destacados, #nuevosLanzamientos{
+    background-color: var(--colorPrincipal);
+    border: 2px var(--colorNegro) solid;
+    border-radius:5px;
+
+}
+
+
+#mainIndex>h2{
+    font-family: var(--fuenteTitulos);
+    font-size:1.6rem;
+    margin-top:3vh;
+    margin-bottom: 3vh;
+    margin-left:5vw;
+}
+
+.productoDiv{
+    width:14vw;
+    text-decoration: none;
+    color: var(--colorNegro);
+    background-color: var(--colorBlanco);
+    border: 2px var(--colorNegro) solid;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding-top:2vh;
+    margin:4vh 1vw;
+    border-radius:5px;
+}
+
+@media (hover:hover){
+    .productoDiv>h5:hover{
+        color:var(--colorPrincipal);
+    }
+}
+
+.imagenDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:15vw;
+    height:20vw;
+}
+
+.productoDiv img{
+    width:80%;
+    height:auto;
+}
+
+.productoDiv>h5{
+    font-family: var(--fuenteTitulosMenores);
+    font-size:1rem;
+    text-align: center;
+    height:6.4vw;
+    margin: 0 0.5vw;
+}
+
+.productoDiv>h6{
+    font-family: var(--fuenteTitulosMenores);
+    font-style:var(--cursiva);
+    font-size:0.8rem;
+    text-align: center;
+}
+
+/* Div enlacesPaginas para enlazar con más páginas en la búsqueda o en las actividades*/
+
+.enlacesPaginas, .enlacesPaginas a{
+    text-decoration: none;
+    margin-left: 0.3vw;
+    color: var(--colorNegro);
+    font-family: var(--fuenteParrafos);
+    font-size:1.2rem;
+}
+
+#paginaMarcada{
+    color: var(--colorPrincipal);
+}
+
+/*---------------------------------------- Estilos para tablet ----------------------------------------*/
+
+/* Este elemento sólo funciona para tablet para que sea un número par de elementos y que, al hacer el wrap el flex no queden espacios feos */
+.ultimoIndex{
+    display:none;
+}
+
+@media (768px <= width <= 1024px){
+
+    aside{
+        display: none;
+    }
+
+    main{
+        width:98vw;
+    }
+
+    .productos{
+        margin-right:0;
+        margin-left:0;
+    }
+
+    .productoDiv{
+        width:36vw;
+    }
+
+    .imagenDiv{
+        width:36vw;
+        height:40vw;
+    }
+
+    .ultimoIndex{
+        display:flex;
+    }
+
+    .productoDiv img{
+        width:75%;
+    }
+
+    .productoDiv>h5{
+        height: 6vw;
+    }
+
+}
+
+/* División entre 500 y 768 píxeles. Necesito una separación distinta para tamaños tan pequeños basados en el viewport.
+    En esta parte mantengo dos columnas, de productos, mientras que en la de menos de 500 ajusto para que haya solo una. */
+
+@media (500px <= width < 768px){
+
+    aside{
+        display: none;
+    }
+
+    .section{
+        width:98vw;
+    }
+
+    .productos{
+        margin-right:0;
+        margin-left:0;
+    }
+
+    .productoDiv{
+        width:36vw;
+    }
+
+    .imagenDiv{
+        width:36vw;
+        height:50vw;
+    }
+
+    .ultimoIndex{
+        display:flex;
+    }
+
+    .productoDiv img{
+        width:85%;
+    }
+
+    .productoDiv>h5{
+        height:8.5vw;
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (width < 500px){
+
+    aside{
+        display: none;
+    }
+
+    .section{
+        width:98vw;
+    }
+
+    .productos{
+        margin-right:0;
+        margin-left:0;
+    }
+
+    .productoDiv{
+        width:70vw;
+    }
+
+    .imagenDiv{
+        width:70vw;
+        height:90vw;
+    }
+
+    .ultimoIndex{
+        display:none;
+    }
+
+    .productoDiv img{
+        width:85%;
+    }
+
+    .productoDiv>h5{
+        height:11vw;
+        font-size: 0.9rem;
+    }
+
+}

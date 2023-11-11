@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Cómics y Manga</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="José Martín Bellido">
+    <meta name="copyright" content="José Martín Bellido">
+    <meta http-equiv="refresh" content="600">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Merriweather&family=Prompt:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/productos.css">
+</head>
+<body>
+
+    <header> <!-- Header / Cabecera -->
+        <a href="./index.html" class="enlaceIndex">
+            <div id="logoDiv">                
+                    <img src="./images/Logo.png" alt="Logotipo" id="logo">
+                    <img src="./images/LogoConBorde.png" alt="" id="logoConBorde">
+
+            </div>
+            <div id="tituloPagina">
+                <h1 id="comienzoTitulo">La Esquirla</h1>
+                <h1 id="finalTitulo">del Larkin</h1>
+            </div>
+        </a>
+        
+        <div class="buscador">
+            <input type="text" name="buscador" class="inputBuscador" pattern="[A-ZÑÁÉÍÓÚa-zñáéíóú]+" maxlength="50" placeholder="Estoy buscando...">
+                <button id="botonBusqueda">
+                  <img src="./images/lupaNegra.svg" alt="Búsqueda" class = "lupa" id="lupaBusquedaNegra">
+                  <img src="./images/lupaBlanca.svg" alt="Búsqueda" class = "lupa" id="lupaBusquedaBlanca">
+                </button>
+            </input>
+        </div>
+
+        <a href="./iniciosesion.html" class="enlacesIconos" id="enlaceIS">
+            <div class="contenedorIconos">
+                <img src="./images/inicioSesion.svg" alt="InicioSesion" id="iconoInicioSesionB">
+                <img src="./images/inicioSesionNegro.svg" alt="InicioSesionNegro" id="iconoInicioSesionN">
+            </div>
+        </a>
+        <a href="./carritocompra.html" class="enlacesIconos" id="enlaceCC">
+            <div class="contenedorIconos">
+                <img src="./images/carritoCompra.svg" alt="CarritoCompra" id="iconoCarritoB">
+                <img src="./images/carritoCompraNegro.svg" alt="CarritoCompra" id="iconoCarritoN">
+            </div>
+        </a>
+
+    </header>
+    <nav> <!-- Nav / Barra de navegación -->
+        <!-- Cinco apartados -> Inicio | Productos | Actividades | Librería | Contacto -->
+
+        <a href="./index.html">INICIO</a>
+
+        <div class="desplegable">
+            <button class="botonDesplegable">
+                PRODUCTOS
+                <img src="./images/iconoTrianguloDesplegableNegro.svg" alt="iconoDesplegableN" id="iconoDesplegableN">
+                <img src="./images/iconoTrianguloDesplegableBlanco.svg" alt="iconoDesplegableB" id="iconoDesplegableB">
+            </button>
+            <div class="interiorDesplegable">
+                <a href="./libros.html">LIBROS</a>
+                <a href="./comics.html">CÓMICS/MANGA</a>
+                <a href="./juegos.html">JUEGOS/CARTAS</a>
+            </div>
+          </div>
+
+        <a href="./actividades.html">ACTIVIDADES</a>
+        <a href="./libreria.html">LIBRERÍA</a>
+        <a href="./contacto.html">CONTACTO</a>
+    </nav>
+    <div class="buscador" id="buscadorMovilTablet">
+        <input type="text" name="buscador" class="inputBuscador" pattern="[A-ZÑÁÉÍÓÚa-zñáéíóú]+" maxlength="50" placeholder="Estoy buscando...">
+            <button id="botonBusqueda">
+              <img src="./images/lupaNegra.svg" alt="Búsqueda" class = "lupa" id="lupaBusquedaNegra">
+              <img src="./images/lupaBlanca.svg" alt="Búsqueda" class = "lupa" id="lupaBusquedaBlanca">
+            </button>
+        </input>
+    </div>
+    <div class="ordenProductosDiv">
+        <p>Ordenar por: </p>
+        <select name="ordenProductosSelect" class="ordenProductosSelect">
+            <option value="nuevos">Fecha de lanzamiento</option>
+            <option value="alfabeticoAsc">Título A-Z</option>
+            <option value="alfabeticoDesc">Título Z-A</option>
+            <option value="precioAsc">Precio ascendente</option>
+            <option value="precioDesc">Precio descendente</option>
+        </select>
+
+    </div>
+    <main>
+
+        <!-- aside dedicado al filtrado de libros por diversas opciones -->
+        <aside>
+            <form action="" class="asideForm">
+                <h2>Libros</h2>
+                <div class="filtroDiv">
+                    <label for="filtroAutor" class="filtroLabel">Autor: </label>
+                    <input type="text" name="filtroAutor" id="filtroAutor" pattern="^[0-9]" class ="inputBuscador filtroInput">
+                </div>
+                <div class="filtroDiv">
+                    <label for="filtroTitulo" class="filtroLabel">Título: </label>
+                    <input type="text" name="filtroTitulo" id="filtroTitulo" class ="inputBuscador filtroInput"">
+                </div>
+
+                <h3>Características</h3>
+    
+                <div class="filtroDiv">
+                    <div class="checkboxDiv">
+                        <input type="checkbox" name="preventa" id="preventa" class="checkBoxInputFiltro">
+                        <label for="preventa">Preventa</label>
+                    </div>
+                    <div class="checkboxDiv">
+                        <input type="checkbox" name="nuevo" id="nuevo" class="checkBoxInputFiltro">
+                        <label for="nuevo">Nuevos lanzamientos</label>
+                    </div>
+                    <div class="checkboxDiv">
+                        <input type="checkbox" name="segundaMano" id="segundaMano" class="checkBoxInputFiltro">
+                        <label for="segundaMano">2ª Mano</label>
+                    </div>
+                </div>
+
+                <h3>Precio</h3>
+
+                <div class="filtroDivPrecio">
+                    <label for="filtroPrecioMin" class="filtroLabel">Precio mínimo: </label>
+                    <input type="text" name="filtroPrecioMin" id="filtroPrecioMin" pattern="[0-9]*[,.\']?[0-9]?[0-9]?" class ="inputBuscador filtroInput" >
+                </div>
+                <div class="filtroDivPrecio">
+                    <label for="filtroPrecioMax" class="filtroLabel">Precio máximo: </label>
+                    <input type="text" name="filtroPrecioMax" id="filtroPrecioMax" pattern="[0-9]*[,.\']?[0-9]?[0-9]?" class ="inputBuscador filtroInput">
+                </div>
+
+            </form>
+        </aside>
+        <section> <!-- Sección de los productos -->
+            <div class="productos">
+                <a href ="#" class="productoDiv">
+                    <h6>CÓMIC/MANGA</h6>
+                    <div class="imagenDiv">
+                        <img src="./images/comic__hel'blar_Alex-Sierra_Sergio-Sierra.jpg" alt="chb-asss"> 
+                    </div>
+                        <h5>Hel'Blar - Los Cazadores de Draugar</h5>
+                    <h6>Alex y Sergio A. Sierra</h6>
+                    <h6>16,00€</h6>
+                </a>
+                <a href ="#" class="productoDiv">
+                    <h6>CÓMIC/MANGA</h6>
+                    <div class="imagenDiv">
+                        <img src="./images/comic__bone-integral_Jeff-Smith.jpg" alt="cbi-js"> 
+                    </div>
+                        <h5>Bone - Integral</h5>
+                    <h6>Jeff Smith</h6>
+                    <h6>45,00€</h6>
+                </a>
+                <a href ="#" class="productoDiv">
+                    <h6>CÓMIC/MANGA</h6>
+                    <div class="imagenDiv">
+                        <img src="./images/comic__berserk-41_Kentaro-Miura.jpg" alt="cb41-km"> 
+                    </div>
+                        <h5>Berserk - 41</h5>
+                    <h6>Kentaro Miura</h6>
+                    <h6>9,50€</h6>
+                </a>
+                <a href ="#" class="productoDiv">
+                    <h6>CÓMIC/MANGA</h6>
+                    <div class="imagenDiv">
+                        <img src="./images/comic__oz-integral_L-Frank-Baum.jpg" alt="coi-lfb"> 
+                    </div>
+                        <h5>OZ - Integral</h5>
+                    <h6>L. Frank Baum</h6>
+                    <h6>33,25€</h6>
+                </a>
+                <a href ="#" class="productoDiv">
+                    <h6>CÓMIC/MANGA</h6>
+                    <div class="imagenDiv">
+                        <img src="./images/comic__death-note-integral_Takeshi-Obata.jpeg" alt="cdni-to"> 
+                    </div>
+                        <h5>Death Note - Integral</h5>
+                    <h6>Takeshi Obata</h6>
+                    <h6>49,95€</h6>
+                </a>
+                <a href ="#" class="productoDiv">
+                    <h6>CÓMIC/MANGA</h6>
+                    <div class="imagenDiv">
+                        <img src="./images/comic__watchmen_Alan-Moore.png" alt="cw-am"> 
+                    </div>
+                        <h5>Watchmen - Integral</h5>
+                    <h6>Alan Moore</h6>
+                    <h6>33,25€</h6>
+                </a>
+                <a href ="#" class="productoDiv">
+                    <h6>CÓMIC/MANGA</h6>
+                    <div class="imagenDiv">
+                        <img src="./images/comic__fabulas-1_Bill-Willingham.jpg" alt="cf1-bw"> 
+                    </div>
+                        <h5>Edición de Lujo - Fábulas uno</h5>
+                    <h6>Bill Willingham</h6>
+                    <h6>24,95€</h6>
+                </a>
+                <a href ="#" class="productoDiv">
+                    <h6>CÓMIC/MANGA</h6>
+                    <div class="imagenDiv">
+                        <img src="./images/comic__predicador-volumen-1_Garth-Ennis.jpg" alt="cpv1-ge"> 
+                    </div>
+                        <h5>Predicador - Volumen uno</h5>
+                    <h6>Garth Ennis</h6>
+                    <h6>17,05€</h6>
+                </a>
+                <a href ="#" class="productoDiv">
+                    <h6>CÓMIC/MANGA</h6>
+                    <div class="imagenDiv">
+                        <img src="./images/comic__preludios-y-nocturnos_Neil-Gaiman.jpg" alt="cpyn-ng"> 
+                    </div>
+                        <h5>Sandman - Preludios y Nocturnos</h5>
+                    <h6>Neil Gaiman</h6>
+                    <h6>23,75€</h6>
+                </a>
+                <a href ="#" class="productoDiv">
+                    <h6>CÓMIC/MANGA</h6>
+                    <div class="imagenDiv">
+                        <img src="./images/comic__los-muertos-vivientes_Kirkman_Moore.jpg" alt="clmv1-km"> 
+                    </div>
+                        <h5>Los Muertos Vivientes - Volumen 1 Integral</h5>
+                    <h6>Kirkman, Moore</h6>
+                    <h6>52,00€</h6>
+                </a>
+                <a href ="#" class="productoDiv">
+                    <h6>CÓMIC/MANGA</h6>
+                    <div class="imagenDiv">
+                        <img src="./images/comic__all-you-need-is-kill_Hiroshi-Sakurazaka.jpeg" alt="caynik-hs"> 
+                    </div>
+                        <h5>All You Need Is Kill Integral</h5>
+                    <h6>Hiroshi Sakurazaka</h6>
+                    <h6>24,95€</h6>
+                </a>
+                <a href ="#" class="productoDiv">
+                    <h6>CÓMIC/MANGA</h6>
+                    <div class="imagenDiv">
+                        <img src="./images/comic__asterix-el-galo_R-Goscinny.jpg" alt="caeg-rg"> 
+                    </div>
+                        <h5>R. Goscinny</h5>
+                    <h6>Hiroshi Sakurazaka</h6>
+                    <h6>12,30€</h6>
+                </a>
+            </div>
+            <div class="enlacesPaginas">
+                Página: <a href="#" id="paginaMarcada">1</a><a href="#">2</a><a href="#">...</a><a href="#">30</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <div class="parrafoFooter">
+                <p>
+                    Copyright
+                    <img src="./images/copyrightBlanco.svg" alt="copyright" id="copyrightIcono">
+                    2023-2023 La Esquirla del Larkin - Todos los derechos reservados
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
