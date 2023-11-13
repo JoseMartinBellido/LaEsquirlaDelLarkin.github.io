@@ -24,7 +24,7 @@
 }
 /*---------------------------------------- Ajustes Header ----------------------------------------*/
 header{
-    height:12vh;
+    height:8rem;
 
     display: flex;
     justify-content: flex-start;
@@ -389,14 +389,14 @@ footer p{
     text-align: center;
 }
 
-/*---------------------------------------- Estilos para tablet ----------------------------------------*/
+/*---------------------------------------- Estilos para 768px - 1024px ----------------------------------------*/
 
-@media (768px <= width <= 1024px){
+@media (768px < width <= 1024px){
 
         /* Ajustes para el header para tablets */
 
     header{
-        height:14vh;
+        height:6.5rem;
     }
 
     #logoDiv{
@@ -477,14 +477,14 @@ footer p{
     }
 }
 
-/*---------------------------------------- Estilos para móvil grande ----------------------------------------*/
+/*---------------------------------------- Estilos para 540px - 768px  ----------------------------------------*/
 
-@media ( 540px <= width < 768px){
+@media ( 540px < width <= 768px){
 
     /* Ajustes para el header para móviles */
 
     header{
-        height:12vh;
+        height:6.5rem;
     }
 
     #logoDiv{
@@ -601,14 +601,14 @@ footer p{
     
 }
 
-/*---------------------------------------- Estilos para móvil pequeño ----------------------------------------*/
+/*---------------------------------------- Estilos tamaños menores a 540px ----------------------------------------*/
 
-@media ( width < 540px){
+@media ( width <= 540px){
 
     /* Ajustes para el header para móviles */
 
     header{
-        height:12vh;
+        height:6.5rem;
     }
 
     #logoDiv{

@@ -183,9 +183,9 @@ form input, form textarea{
     }
 }
 
-/*---------------------------------------- Estilos para tablet ----------------------------------------*/
+/*---------------------------------------- Estilos para 768px - 1024px ----------------------------------------*/
 
-@media (768px <= width <= 1024px){
+@media (768px < width <= 1024px){
     
     main>h2{
         margin-bottom: 3vh;
@@ -221,9 +221,9 @@ form input, form textarea{
     
 }
 
-/*---------------------------------------- Estilos para móviles grandes ----------------------------------------*/
+/*---------------------------------------- Estilos para 540px - 768px ----------------------------------------*/
 
-@media (540px <= width < 768px){
+@media (540px < width <= 768px){
     main>h2{
         width: 40vw;
         display: flex;
@@ -299,9 +299,9 @@ form input, form textarea{
     
 }
 
-/*---------------------------------------- Estilos para móviles pequeños ----------------------------------------*/
+/*---------------------------------------- Estilos para tamaños menores a 540px ----------------------------------------*/
 
-@media (width < 540px){
+@media (width <= 540px){
     main>h2{
         width: 40vw;
         display: flex;

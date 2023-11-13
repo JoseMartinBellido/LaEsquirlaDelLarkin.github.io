@@ -90,9 +90,9 @@ main>h2{
     margin-left: 3vw;
 }
 
-/*---------------------------------------- Estilos para tablet ----------------------------------------*/
+/*---------------------------------------- Estilos para 768px - 1024px ----------------------------------------*/
 
-@media (768px <= width <= 1024px){
+@media (768px < width <= 1024px){
     
     .localizacionDiv{
         flex-direction: column;
@@ -103,7 +103,7 @@ main>h2{
     }
 }
 
-/*---------------------------------------- Estilos para móviles grandes ----------------------------------------*/
+/*---------------------------------------- Estilos para 500px - 768px  ----------------------------------------*/
 
 #mapaDivMovil{
     display:none;
@@ -113,7 +113,7 @@ main>h2{
     display:none;
 }
 
-@media (500px <= width < 768px){
+@media (500px < width <= 768px){
     
     main>h2{
         font-size: 1.4rem;
@@ -150,9 +150,9 @@ main>h2{
     }
 }
 
-/*---------------------------------------- Estilos para móviles pequeños ----------------------------------------*/
+/*---------------------------------------- Estilos para tamaños menores a 500px  ----------------------------------------*/
 
-@media (width < 500px){
+@media (width <= 500px){
     
     main>h2{
         font-size: 1.3rem;
