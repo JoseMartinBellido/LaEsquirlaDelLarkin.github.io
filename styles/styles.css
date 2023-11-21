@@ -415,7 +415,7 @@ footer p{
     }
 
     #comienzoTitulo, #finalTitulo{
-        width: 10rem;
+        width: 10.6rem;
         text-align: left;
     }
 
@@ -424,7 +424,7 @@ footer p{
     }
 
     #finalTitulo{
-        margin-left:1vw;
+        margin-left:0;
     }
 
     .buscador{
@@ -498,12 +498,13 @@ footer p{
 
     #tituloPagina{
         flex-direction:row;
+        font-size: 0.8rem;
         width:60vw;
         margin-left:1vw;
     }
 
     #comienzoTitulo, #finalTitulo{
-        width: 10rem;
+        width: 9.4rem;
         text-align: left;
     }
 
@@ -512,7 +513,7 @@ footer p{
     }
 
     #finalTitulo{
-        margin-left:1vw;
+        margin-left:0;
     }
 
     .buscador{
@@ -626,7 +627,7 @@ footer p{
     }
 
     #comienzoTitulo, #finalTitulo{
-        width: 8rem;
+        width: 9rem;
         text-align: left;
         font-size: 1.4rem;
     }
