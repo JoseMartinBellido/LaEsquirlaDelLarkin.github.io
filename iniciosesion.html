@@ -134,7 +134,7 @@
                     <input type="tel" name="telefono" id="telefono" pattern="[6-9][0-9]{8}">
                 </div>
                 <div class="inputRadioDiv">
-                    <label for="genero" id="tituloGenero">Género: </label>
+                    <label id="tituloGenero">Género: </label>
                     <div id="opcionesGenero">
                         <input type="radio" value="masculino" id="masculino" name="genero">
                         <label for="masculino">Masculino</label>
@@ -144,9 +144,15 @@
                         <label for="noDefinido">No definido</label>
                     </div>
                 </div>
+
                 <div class="inputFechaDiv">
                     <label for="fechaNav">Fecha de Nacimiento: </label>
                     <input type="date" id="fechaNav">
+                </div>
+
+                <div class="inputCondicionesDiv">
+                    <input type="checkbox" value="condiciones" id="condiciones" name="condiciones" required>
+                    <label for="condiciones">Consiento el tratamiento de mis datos personales con el fin exclusivo al que va destinado este formulario.</label>
                 </div>
                 <input type="submit" value="Registro" id="botonRegistro">
             </form>

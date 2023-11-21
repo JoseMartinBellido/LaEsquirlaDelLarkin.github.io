@@ -186,6 +186,23 @@ form{
     font-size: 0.9rem;
 }
 
+.inputCondicionesDiv{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+
+    width:60vw;
+    margin-left:2vw;
+    margin-top:4vh;
+}
+
+.inputCondicionesDiv label{
+    font-family: var(--fuenteParrafos);
+    font-size: 0.9rem;
+    margin-left: 0.5vw;
+}
+
 #botonRegistro{
     width: 8vw;
     border-radius: 5px;
@@ -263,6 +280,10 @@ form{
         margin-left: 0;
     }
 
+    .inputCondicionesDiv{
+        width:85vw;
+    }
+
     #botonRegistro{
         margin-left:36vw;
         width:6rem;
@@ -337,6 +358,14 @@ form{
     }
 
 
+    .inputCondicionesDiv{
+        width:90vw;
+    }
+
+    .inputCondicionesDiv label{
+        font-size:0.85rem;
+    }
+
     #botonRegistro{
         margin-left:36vw;
         width:6rem;
@@ -409,6 +438,13 @@ form{
         margin-left:2vw;
     }
 
+    .inputCondicionesDiv{
+        width:90vw;
+    }
+
+    .inputCondicionesDiv label{
+        font-size:0.8rem;
+    }
 
     #botonRegistro{
         margin-left:36vw;
