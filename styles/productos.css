@@ -212,17 +212,21 @@ section{
 }
 
 .productoDiv>h5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     font-family: var(--fuenteTitulosMenores);
-    font-size:1rem;
+    font-size:1.1rem;
     text-align: center;
-    height:6.4vw;
+    height:6rem;
     margin: 0 0.5vw;
 }
 
 .productoDiv>h6{
     font-family: var(--fuenteTitulosMenores);
     font-style:var(--cursiva);
-    font-size:0.8rem;
+    font-size:0.85rem;
     text-align: center;
 }
 
@@ -242,7 +246,26 @@ section{
 
 /*---------------------------------------- Estilos para 768px - 1024px ----------------------------------------*/
 
-/* Este elemento sólo funciona para tablet para que sea un número par de elementos y que, al hacer el wrap el flex no queden espacios feos */
+.ultimoIndex{
+    display:none;
+}
+
+@media (1024px < width <= 1240px){
+
+    .productoDiv>h5{
+        height: 5rem;
+        font-size:0.9rem;
+    }
+
+    .productoDiv>h6{
+        font-size:0.75rem;
+    }
+
+}
+
+/*---------------------------------------- Estilos para 768px - 1024px ----------------------------------------*/
+
+/* Este elemento sólo funciona para tablet para que sea un número par de elementos y que, al hacer el wrap el flex no queden espacios */
 .ultimoIndex{
     display:none;
 }
@@ -280,7 +303,11 @@ section{
     }
 
     .productoDiv>h5{
-        height: 6vw;
+        font-size:1.3rem;
+    }
+
+    .productoDiv>h6{
+        font-size:1rem;
     }
 
 }
@@ -320,9 +347,13 @@ section{
     }
 
     .productoDiv>h5{
-        height:8.5vw;
+        font-size: 1.1rem;
+    }
+
+    .productoDiv>h6{
         font-size: 0.9rem;
     }
+
 }
 
 
@@ -359,8 +390,11 @@ section{
     }
 
     .productoDiv>h5{
-        height:11vw;
-        font-size: 0.9rem;
+        font-size: 1.2rem;
+    }
+
+    .productoDiv>h6{
+        font-size: 1rem;
     }
 
 }
