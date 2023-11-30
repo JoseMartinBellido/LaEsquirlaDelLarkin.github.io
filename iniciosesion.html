@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <title>Librería</title>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,7 +13,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Merriweather&family=Prompt:ital@0;1&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Merriweather&family=Prompt:ital@0;1&display=swap"
+        rel="stylesheet">
 
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 
@@ -23,9 +26,9 @@
 
     <header> <!-- Header / Cabecera -->
         <a href="./index.html" class="enlaceIndex">
-            <div id="logoDiv">                
-                    <img src="./images/Logo.png" alt="Logotipo" id="logo">
-                    <img src="./images/LogoConBorde.png" alt="" id="logoConBorde">
+            <div id="logoDiv">
+                <img src="./images/Logo.png" alt="Logotipo" id="logo">
+                <img src="./images/LogoConBorde.png" alt="" id="logoConBorde">
 
             </div>
             <div id="tituloPagina">
@@ -33,13 +36,14 @@
                 <h1 id="finalTitulo">del Larkin</h1>
             </div>
         </a>
-        
+
         <div class="buscador">
-            <input type="text" name="buscador" class="inputBuscador" pattern="[A-ZÑÁÉÍÓÚa-zñáéíóú]+" maxlength="50" placeholder="Estoy buscando...">
-                <button id="botonBusqueda">
-                  <img src="./images/lupaNegra.svg" alt="Búsqueda" class = "lupa" id="lupaBusquedaNegra">
-                  <img src="./images/lupaBlanca.svg" alt="Búsqueda" class = "lupa" id="lupaBusquedaBlanca">
-                </button>
+            <input type="text" name="buscador" class="inputBuscador" pattern="[A-ZÑÁÉÍÓÚa-zñáéíóú]+" maxlength="50"
+                placeholder="Estoy buscando...">
+            <button id="botonBusqueda">
+                <img src="./images/lupaNegra.svg" alt="Búsqueda" class="lupa" id="lupaBusquedaNegra">
+                <img src="./images/lupaBlanca.svg" alt="Búsqueda" class="lupa" id="lupaBusquedaBlanca">
+            </button>
             </input>
         </div>
 
@@ -69,11 +73,11 @@
                 <img src="./images/iconoTrianguloDesplegableBlanco.svg" alt="iconoDesplegableB" id="iconoDesplegableB">
             </button>
             <div class="interiorDesplegable">
-              <a href="./libros.html">LIBROS</a>
-              <a href="./comics.html">CÓMICS/MANGA</a>
-              <a href="./juegos.html">JUEGOS/CARTAS</a>
+                <a href="./libros.html">LIBROS</a>
+                <a href="./comics.html">CÓMICS/MANGA</a>
+                <a href="./juegos.html">JUEGOS/CARTAS</a>
             </div>
-          </div>
+        </div>
 
 
         <a href="./actividades.html">ACTIVIDADES</a>
@@ -84,91 +88,95 @@
 
     <main id="mainInicioSesion"> <!-- Main: dividido en inicio de sesión y formulario de registro -->
 
-            <form action="" id="formularioInicio"> <!-- Formulario de Inicio de sesión -->
-                <h2 id="tituloInicio">Inicio de sesión</h2>
-                <div class="inputTextoDiv">
-                    <label for="emailInicio">Correo electrónico: </label>
-                    <input type="email" name="emailInicio" id="emailInicio" pattern="[a-z]+@[outlook|hotmail|gmail|yahoo]\.[a-z]{1,3}">
-                </div>
-                <div class="inputTextoDiv">
-                    <label for="passInicio">Contraseña: </label>
-                    <input type="password" name="passInicio" id="passInicio" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}">
-                </div>
-                <input type="submit" value="Inicio" id="botonInicio">
-                <a href="#formularioRegistro">¿No tienes cuenta?</a>
-            </form>
+        <form action="" id="formularioInicio"> <!-- Formulario de Inicio de sesión -->
+            <h2 id="tituloInicio">Inicio de sesión</h2>
+            <div class="inputTextoDiv">
+                <label for="emailInicio">Correo electrónico: </label>
+                <input type="email" name="emailInicio" id="emailInicio"
+                    pattern="[a-z]+@[outlook|hotmail|gmail|yahoo]\.[a-z]{1,3}">
+            </div>
+            <div class="inputTextoDiv">
+                <label for="passInicio">Contraseña: </label>
+                <input type="password" name="passInicio" id="passInicio"
+                    pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}">
+            </div>
+            <input type="submit" value="Inicio" id="botonInicio">
+            <a href="#formularioRegistro">¿No tienes cuenta?</a>
+        </form>
 
 
-            <form action="" id="formularioRegistro"> <!-- Formulario de Registro -->
-                <h2 id="tituloRegistro">Registro de usuario</h2>
-                <div class="inputTextoDiv">
-                    <label for="usuario">Usuario: </label>
-                    <input type="text" name="usuario" id="usuario" pattern="[A-Za-z0-9]+" maxlength="20">
+        <form action="" id="formularioRegistro"> <!-- Formulario de Registro -->
+            <h2 id="tituloRegistro">Registro de usuario</h2>
+            <div class="inputTextoDiv">
+                <label for="usuario">Usuario: </label>
+                <input type="text" name="usuario" id="usuario" pattern="[A-Za-z0-9]+" maxlength="20">
+            </div>
+            <div class="inputTextoDiv">
+                <label for="passRegistro">Contraseña: </label>
+                <input type="password" name="passRegistro" id="passRegistro"
+                    pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}">
+            </div>
+            <div class="inputTextoDiv">
+                <label for="emailRegistro">Correo electrónico: </label>
+                <input type="email" name="emailRegistro" id="emailRegistro"
+                    pattern="[a-z]+@[outlook|hotmail|gmail|yahoo]\.[a-z]{1,3}" maxlength='16' minlength='8'>
+            </div>
+            <div class="inputTextoDiv">
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre" pattern="[A-ZÁÉÍÓÚa-záéíóú\s]+" maxlength='20'>
+            </div>
+            <div class="inputTextoDiv">
+                <label for="apellido1">Primer Apellido: </label>
+                <input type="text" name="apellido1" id="apellido1" pattern="[A-ZÁÉÍÓÚa-záéíóú\s]+" maxlength='20'>
+            </div>
+            <div class="inputTextoDiv">
+                <label for="apellido2">Segundo Apellido: </label>
+                <input type="text" name="apellido2" id="apellido2" pattern="[A-ZÁÉÍÓÚa-záéíóú\s]+" maxlength='20'>
+            </div>
+            <div class="inputTextoDiv">
+                <label for="direccion">Dirección: </label>
+                <input type="text" name="direccion" id="direccion" pattern="[A-ZÁÉÍÓÚa-záéíóú\s]+" maxlength='50'>
+            </div>
+            <div class="inputTextoDiv">
+                <label for="telefono">Teléfono: </label>
+                <input type="tel" name="telefono" id="telefono" pattern="[6-9][0-9]{8}">
+            </div>
+            <div class="inputRadioDiv">
+                <label id="tituloGenero">Género: </label>
+                <div id="opcionesGenero">
+                    <input type="radio" value="masculino" id="masculino" name="genero">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" value="femenino" id="femenino" name="genero">
+                    <label for="femenino">Femenino</label>
+                    <input type="radio" value="noDefinido" id="noDefinido" name="genero">
+                    <label for="noDefinido">No definido</label>
                 </div>
-                <div class="inputTextoDiv">
-                    <label for="passRegistro">Contraseña: </label>
-                    <input type="password" name="passRegistro" id="passRegistro" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}">
-                </div>
-                <div class="inputTextoDiv">
-                    <label for="emailRegistro">Correo electrónico: </label>
-                    <input type="email" name="emailRegistro" id="emailRegistro" pattern="[a-z]+@[outlook|hotmail|gmail|yahoo]\.[a-z]{1,3}" maxlength='16' minlength='8'>
-                </div>
-                <div class="inputTextoDiv">
-                    <label for="nombre">Nombre: </label>
-                    <input type="text" name="nombre" id="nombre" pattern="[A-ZÁÉÍÓÚa-záéíóú\s]+" maxlength='20'>
-                </div>
-                <div class="inputTextoDiv">
-                    <label for="apellido1">Primer Apellido: </label>
-                    <input type="text" name="apellido1" id="apellido1" pattern="[A-ZÁÉÍÓÚa-záéíóú\s]+" maxlength='20'>
-                </div>
-                <div class="inputTextoDiv">
-                    <label for="apellido2">Segundo Apellido: </label>
-                    <input type="text" name="apellido2" id="apellido2" pattern="[A-ZÁÉÍÓÚa-záéíóú\s]+" maxlength='20'>
-                </div>
-                <div class="inputTextoDiv">
-                    <label for="direccion">Dirección: </label>
-                    <input type="text" name="direccion" id="direccion" pattern="[A-ZÁÉÍÓÚa-záéíóú\s]+" maxlength='50'>
-                </div>
-                <div class="inputTextoDiv">
-                    <label for="telefono">Teléfono: </label>
-                    <input type="tel" name="telefono" id="telefono" pattern="[6-9][0-9]{8}">
-                </div>
-                <div class="inputRadioDiv">
-                    <label id="tituloGenero">Género: </label>
-                    <div id="opcionesGenero">
-                        <input type="radio" value="masculino" id="masculino" name="genero">
-                        <label for="masculino">Masculino</label>
-                        <input type="radio" value="femenino" id="femenino" name="genero">
-                        <label for="femenino">Femenino</label>
-                        <input type="radio" value="noDefinido" id="noDefinido" name="genero">
-                        <label for="noDefinido">No definido</label>
-                    </div>
-                </div>
+            </div>
 
-                <div class="inputFechaDiv">
-                    <label for="fechaNav">Fecha de Nacimiento: </label>
-                    <input type="date" id="fechaNav">
-                </div>
+            <div class="inputFechaDiv">
+                <label for="fechaNav">Fecha de Nacimiento: </label>
+                <input type="date" id="fechaNav">
+            </div>
 
-                <div class="inputCondicionesDiv">
-                    <input type="checkbox" value="condiciones" id="condiciones" name="condiciones" required>
-                    <label for="condiciones">Consiento el tratamiento de mis datos personales con el fin exclusivo al que va destinado este formulario.</label>
-                </div>
-                <input type="submit" value="Registro" id="botonRegistro">
-            </form>
+            <div class="inputCondicionesDiv">
+                <input type="checkbox" value="condiciones" id="condiciones" name="condiciones" required>
+                <label for="condiciones">Consiento el tratamiento de mis datos personales con el fin exclusivo al que va
+                    destinado este formulario.</label>
+            </div>
+            <input type="submit" value="Registro" id="botonRegistro">
+        </form>
 
     </main>
     <footer>
-        <div>
-            <div class="parrafoFooter">
-                <p>
-                    Copyright
-                    <img src="./images/copyrightBlanco.svg" alt="copyright" id="copyrightIcono">
-                    2023-2023 La Esquirla del Larkin - Todos los derechos reservados
-                </p>
-            </div>
+        <div class="parrafoFooter">
+            <p>
+                Copyright
+                <img src="./images/copyrightBlanco.svg" alt="copyright" id="copyrightIcono">
+                2023-2023 La Esquirla del Larkin - Todos los derechos reservados
+            </p>
         </div>
     </footer>
 
-</body>
+    </body>
+
 </html>

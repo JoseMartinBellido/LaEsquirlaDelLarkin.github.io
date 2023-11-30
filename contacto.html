@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <title>Librería</title>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,7 +13,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Merriweather&family=Prompt:ital@0;1&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Merriweather&family=Prompt:ital@0;1&display=swap"
+        rel="stylesheet">
 
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 
@@ -23,9 +26,9 @@
 
     <header> <!-- Header / Cabecera -->
         <a href="./index.html" class="enlaceIndex">
-            <div id="logoDiv">                
-                    <img src="./images/Logo.png" alt="Logotipo" id="logo">
-                    <img src="./images/LogoConBorde.png" alt="" id="logoConBorde">
+            <div id="logoDiv">
+                <img src="./images/Logo.png" alt="Logotipo" id="logo">
+                <img src="./images/LogoConBorde.png" alt="" id="logoConBorde">
 
             </div>
             <div id="tituloPagina">
@@ -33,13 +36,14 @@
                 <h1 id="finalTitulo">del Larkin</h1>
             </div>
         </a>
-        
+
         <div class="buscador">
-            <input type="text" name="buscador" class="inputBuscador" pattern="[A-ZÑÁÉÍÓÚa-zñáéíóú]+" maxlength="50" placeholder="Estoy buscando...">
-                <button id="botonBusqueda">
-                  <img src="./images/lupaNegra.svg" alt="Búsqueda" class = "lupa" id="lupaBusquedaNegra">
-                  <img src="./images/lupaBlanca.svg" alt="Búsqueda" class = "lupa" id="lupaBusquedaBlanca">
-                </button>
+            <input type="text" name="buscador" class="inputBuscador" pattern="[A-ZÑÁÉÍÓÚa-zñáéíóú]+" maxlength="50"
+                placeholder="Estoy buscando...">
+            <button id="botonBusqueda">
+                <img src="./images/lupaNegra.svg" alt="Búsqueda" class="lupa" id="lupaBusquedaNegra">
+                <img src="./images/lupaBlanca.svg" alt="Búsqueda" class="lupa" id="lupaBusquedaBlanca">
+            </button>
             </input>
         </div>
 
@@ -69,11 +73,11 @@
                 <img src="./images/iconoTrianguloDesplegableBlanco.svg" alt="iconoDesplegableB" id="iconoDesplegableB">
             </button>
             <div class="interiorDesplegable">
-              <a href="./libros.html">LIBROS</a>
-              <a href="./comics.html">CÓMICS/MANGA</a>
-              <a href="./juegos.html">JUEGOS/CARTAS</a>
+                <a href="./libros.html">LIBROS</a>
+                <a href="./comics.html">CÓMICS/MANGA</a>
+                <a href="./juegos.html">JUEGOS/CARTAS</a>
             </div>
-          </div>
+        </div>
 
 
         <a href="./actividades.html">ACTIVIDADES</a>
@@ -82,12 +86,13 @@
     </nav>
 
 
-    <main id="mainContacto"> <!-- Main: dividido en un contenedor de información de contacto (article) y un formulario básico -->
+    <main id="mainContacto">
+        <!-- Main: dividido en un contenedor de información de contacto (article) y un formulario básico -->
         <h2>Contacto</h2>
         <div id="contactoDivContenedor"> <!-- Div que contiene todo el contacto -->
 
             <article> <!-- article para la información de contacto -->
-                
+
                 <div class="viasContacto"> <!-- Vía de contacto individual-->
                     <div class="iconoContacto"> <!-- Div para darle el fondo circular al icono-->
                         <img src="./images/iconoEmail.svg" alt="IconoEmail">
@@ -134,35 +139,35 @@
                         </div>
                     </a>
                 </div>
-                
+
             </article>
-    
-            <form action=""> <!-- Debería tener action="post", pero si lo hago daría error al darle al botón de enviar ya que no hay enlace real -->
-    
+
+            <form action="">
+                <!-- Debería tener action="post", pero si lo hago daría error al darle al botón de enviar ya que no hay enlace real -->
+
                 <input type="text" name="nombre" placeholder="Nombre">
-    
+
                 <input type="email" name="email" placeholder="Correo electrónico">
-                    
+
                 <input type="text" name="asunto" placeholder="Asunto">
-    
+
                 <textarea name="mensaje" id="mensaje" cols="30" rows="6" placeholder="Mensaje"></textarea>
-    
+
                 <input type="submit" value="Enviar" id="botonEnviar">
             </form>
         </div>
-        
+
     </main>
     <footer>
-        <div>
-            <div class="parrafoFooter">
-                <p>
-                    Copyright
-                    <img src="./images/copyrightBlanco.svg" alt="copyright" id="copyrightIcono">
-                    2023-2023 La Esquirla del Larkin - Todos los derechos reservados
-                </p>
-            </div>
+        <div class="parrafoFooter">
+            <p>
+                Copyright
+                <img src="./images/copyrightBlanco.svg" alt="copyright" id="copyrightIcono">
+                2023-2023 La Esquirla del Larkin - Todos los derechos reservados
+            </p>
         </div>
     </footer>
 
-</body>
+    </body>
+
 </html>

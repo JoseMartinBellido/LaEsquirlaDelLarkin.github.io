@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <title>Libros</title>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,20 +13,23 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Merriweather&family=Prompt:ital@0;1&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Merriweather&family=Prompt:ital@0;1&display=swap"
+        rel="stylesheet">
 
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/productos.css">
 </head>
+
 <body>
 
     <header> <!-- Header / Cabecera -->
         <a href="./index.html" class="enlaceIndex">
-            <div id="logoDiv">                
-                    <img src="./images/Logo.png" alt="Logotipo" id="logo">
-                    <img src="./images/LogoConBorde.png" alt="" id="logoConBorde">
+            <div id="logoDiv">
+                <img src="./images/Logo.png" alt="Logotipo" id="logo">
+                <img src="./images/LogoConBorde.png" alt="" id="logoConBorde">
 
             </div>
             <div id="tituloPagina">
@@ -33,13 +37,14 @@
                 <h1 id="finalTitulo">del Larkin</h1>
             </div>
         </a>
-        
+
         <div class="buscador">
-            <input type="text" name="buscador" class="inputBuscador" pattern="[A-ZÑÁÉÍÓÚa-zñáéíóú]+" maxlength="50" placeholder="Estoy buscando...">
-                <button id="botonBusqueda">
-                  <img src="./images/lupaNegra.svg" alt="Búsqueda" class = "lupa" id="lupaBusquedaNegra">
-                  <img src="./images/lupaBlanca.svg" alt="Búsqueda" class = "lupa" id="lupaBusquedaBlanca">
-                </button>
+            <input type="text" name="buscador" class="inputBuscador" pattern="[A-ZÑÁÉÍÓÚa-zñáéíóú]+" maxlength="50"
+                placeholder="Estoy buscando...">
+            <button id="botonBusqueda">
+                <img src="./images/lupaNegra.svg" alt="Búsqueda" class="lupa" id="lupaBusquedaNegra">
+                <img src="./images/lupaBlanca.svg" alt="Búsqueda" class="lupa" id="lupaBusquedaBlanca">
+            </button>
             </input>
         </div>
 
@@ -73,7 +78,7 @@
                 <a href="./comics.html">CÓMICS/MANGA</a>
                 <a href="./juegos.html">JUEGOS/CARTAS</a>
             </div>
-          </div>
+        </div>
 
 
         <a href="./actividades.html">ACTIVIDADES</a>
@@ -81,11 +86,12 @@
         <a href="./contacto.html">CONTACTO</a>
     </nav>
     <div class="buscador" id="buscadorMovilTablet">
-        <input type="text" name="buscador" class="inputBuscador" pattern="[A-ZÑÁÉÍÓÚa-zñáéíóú]+" maxlength="50" placeholder="Estoy buscando...">
-            <button id="botonBusqueda">
-              <img src="./images/lupaNegra.svg" alt="Búsqueda" class = "lupa" id="lupaBusquedaNegra">
-              <img src="./images/lupaBlanca.svg" alt="Búsqueda" class = "lupa" id="lupaBusquedaBlanca">
-            </button>
+        <input type="text" name="buscador" class="inputBuscador" pattern="[A-ZÑÁÉÍÓÚa-zñáéíóú]+" maxlength="50"
+            placeholder="Estoy buscando...">
+        <button id="botonBusqueda">
+            <img src="./images/lupaNegra.svg" alt="Búsqueda" class="lupa" id="lupaBusquedaNegra">
+            <img src="./images/lupaBlanca.svg" alt="Búsqueda" class="lupa" id="lupaBusquedaBlanca">
+        </button>
         </input>
     </div>
     <div class="ordenProductosDiv">
@@ -107,15 +113,16 @@
                 <h2>Libros</h2>
                 <div class="filtroDiv">
                     <label for="filtroAutor" class="filtroLabel">Autor: </label>
-                    <input type="text" name="filtroAutor" id="filtroAutor" pattern="^[0-9]" class ="inputBuscador filtroInput">
+                    <input type="text" name="filtroAutor" id="filtroAutor" pattern="^[0-9]"
+                        class="inputBuscador filtroInput">
                 </div>
                 <div class="filtroDiv">
                     <label for="filtroTitulo" class="filtroLabel">Título: </label>
-                    <input type="text" name="filtroTitulo" id="filtroTitulo" class ="inputBuscador filtroInput">
+                    <input type="text" name="filtroTitulo" id="filtroTitulo" class="inputBuscador filtroInput">
                 </div>
 
                 <h3>Características</h3>
-    
+
                 <div class="filtroDiv">
                     <div class="checkboxDiv">
                         <input type="checkbox" name="preventa" id="preventa" class="checkBoxInputFiltro">
@@ -135,83 +142,87 @@
 
                 <div class="filtroDivPrecio">
                     <label for="filtroPrecioMin" class="filtroLabel">Precio mínimo: </label>
-                    <input type="text" name="filtroPrecioMin" id="filtroPrecioMin" pattern="[0-9]*[,.\']?[0-9]?[0-9]?" class ="inputBuscador filtroInput" >
+                    <input type="text" name="filtroPrecioMin" id="filtroPrecioMin" pattern="[0-9]*[,.\']?[0-9]?[0-9]?"
+                        class="inputBuscador filtroInput">
                 </div>
                 <div class="filtroDivPrecio">
                     <label for="filtroPrecioMax" class="filtroLabel">Precio máximo: </label>
-                    <input type="text" name="filtroPrecioMax" id="filtroPrecioMax" pattern="[0-9]*[,.\']?[0-9]?[0-9]?" class ="inputBuscador filtroInput">
+                    <input type="text" name="filtroPrecioMax" id="filtroPrecioMax" pattern="[0-9]*[,.\']?[0-9]?[0-9]?"
+                        class="inputBuscador filtroInput">
                 </div>
 
             </form>
-            
+
         </aside>
         <section> <!-- Section contenedor de los libros -->
             <div class="productos">
-                <a href ="#" class="productoDiv">
+                <a href="#" class="productoDiv">
                     <h6>LIBRO</h6>
                     <div class="imagenDiv">
                         <!-- El texto alt va a ser "l" si es libro, "c" si es cómic o "j" si es juego + el acrónimo del título/juego +"-" + acrónimo del autor/empresa -->
-                        <img src="./images/libro__el-ultimo-argumento-de-los-reyes-ilustrado_Joe-Abercrombie.jpg" alt="leuadlri-ja"> 
+                        <img src="./images/libro__el-ultimo-argumento-de-los-reyes-ilustrado_Joe-Abercrombie.jpg"
+                            alt="leuadlri-ja">
                     </div>
                     <h5>El Último Argumento de los Reyes</h5>
                     <h6>Joe Abercrombie</h6>
                     <h6>PREVENTA - 34,95€</h6>
                 </a>
-                <a href ="#" class="productoDiv">
+                <a href="#" class="productoDiv">
                     <h6>LIBRO</h6>
                     <div class="imagenDiv">
-                        <img src="./images/libro__harry-potter-y-el-prisionero-de-azkaban_J-K-Rowling.jpg" alt="lhpyepda-jkr"> 
+                        <img src="./images/libro__harry-potter-y-el-prisionero-de-azkaban_J-K-Rowling.jpg"
+                            alt="lhpyepda-jkr">
                     </div>
-                        <h5>Harry Potter y el Prisionero de Azkaban</h5>
+                    <h5>Harry Potter y el Prisionero de Azkaban</h5>
                     <h6>J. K. Rowling</h6>
                     <h6>PREVENTA - 37,95€</h6>
                 </a>
-                <a href ="#" class="productoDiv">
+                <a href="#" class="productoDiv">
                     <h6>LIBRO</h6>
                     <div class="imagenDiv">
-                        <img src="./images/libro__guardias-guardias_Terry-Pratchett.jpg" alt="lgg-tp"> 
+                        <img src="./images/libro__guardias-guardias_Terry-Pratchett.jpg" alt="lgg-tp">
                     </div>
-                        <h5>¡Guardias! ¡Guardias!</h5>
+                    <h5>¡Guardias! ¡Guardias!</h5>
                     <h6>Terry Pratchett</h6>
                     <h6>10,40€</h6>
                 </a>
-                <a href ="#" class="productoDiv">
+                <a href="#" class="productoDiv">
                     <h6>LIBRO</h6>
                     <div class="imagenDiv">
-                        <img src="./images/libro__el-camino-de-los-reyes_brandon-sanderson.jpg" alt="lecdlr-bs"> 
+                        <img src="./images/libro__el-camino-de-los-reyes_brandon-sanderson.jpg" alt="lecdlr-bs">
                     </div>
-                        <h5>El Camino de los Reyes</h5>
+                    <h5>El Camino de los Reyes</h5>
                     <h6>Brandon Sanderson</h6>
                     <h6>33,15€</h6>
                 </a>
-                <a href ="#" class="productoDiv">
+                <a href="#" class="productoDiv">
                     <h6>LIBRO</h6>
                     <div class="imagenDiv">
-                        <img src="./images/libro__pack-nacidos-de-la-bruma_Brandon-Sanderson.jpg" alt="lndlbp-bs"> 
+                        <img src="./images/libro__pack-nacidos-de-la-bruma_Brandon-Sanderson.jpg" alt="lndlbp-bs">
                     </div>
-                        <h5>Trilogía Nacidos de la Bruma</h5>
+                    <h5>Trilogía Nacidos de la Bruma</h5>
                     <h6>Brandon Sanderson</h6>
                     <h6>59,60€</h6>
                 </a>
-                <a href ="#" class="productoDiv">
+                <a href="#" class="productoDiv">
                     <h6>LIBRO</h6>
                     <div class="imagenDiv">
-                        <img src="./images/libro__el-hombre-iluminado_Brandon-Sanderson.jpg" alt="lehi-bs"> 
+                        <img src="./images/libro__el-hombre-iluminado_Brandon-Sanderson.jpg" alt="lehi-bs">
                     </div>
-                        <h5>El Hombre Iluminado</h5>
+                    <h5>El Hombre Iluminado</h5>
                     <h6>Brandon Sanderson</h6>
                     <h6>10,99€</h6>
                 </a>
-                <a href ="#" class="productoDiv">
+                <a href="#" class="productoDiv">
                     <h6>LIBRO</h6>
                     <div class="imagenDiv">
-                        <img src="./images/libro__aprendiz-de-asesino_Robin-Hobb.jpg" alt="lada-rh"> 
+                        <img src="./images/libro__aprendiz-de-asesino_Robin-Hobb.jpg" alt="lada-rh">
                     </div>
-                        <h5>Aprendiz de Asesino - Trilogía del Vatídico</h5>
+                    <h5>Aprendiz de Asesino - Trilogía del Vatídico</h5>
                     <h6>Robin Hobb</h6>
                     <h6>10,99€</h6>
                 </a>
-                <a href ="#" class="productoDiv">
+                <a href="#" class="productoDiv">
                     <h6>LIBRO</h6>
                     <div class="imagenDiv">
                         <img src="./images/libro__hermana-roja_Mark-Lawrence.jpg" alt="lhr-ml">
@@ -220,40 +231,40 @@
                     <h6>Mark Lawrence</h6>
                     <h6>23,70€</h6>
                 </a>
-                
-                <a href ="#" class="productoDiv">
+
+                <a href="#" class="productoDiv">
                     <h6>LIBRO</h6>
                     <div class="imagenDiv">
-                        <img src="./images/libro__proyecto-hail-mary_Andy-Weir.jpg" alt="lphm-aw"> 
+                        <img src="./images/libro__proyecto-hail-mary_Andy-Weir.jpg" alt="lphm-aw">
                     </div>
                     <h5>Proyecto Hail Mary</h5>
                     <h6>Andy Weir</h6>
                     <h6>28,75€</h6>
                 </a>
-                <a href ="#" class="productoDiv">
+                <a href="#" class="productoDiv">
                     <h6>LIBRO</h6>
                     <div class="imagenDiv">
-                        <img src="./images/libro__el-ascenso-de-la-sombra_Robert-Jordan.jpg" alt="leadls-rj"> 
+                        <img src="./images/libro__el-ascenso-de-la-sombra_Robert-Jordan.jpg" alt="leadls-rj">
                     </div>
-                        <h5>El Ascenso de la Sombra</h5>
+                    <h5>El Ascenso de la Sombra</h5>
                     <h6>Robert Jordan</h6>
                     <h6>18,95€</h6>
                 </a>
-                <a href ="#" class="productoDiv">
+                <a href="#" class="productoDiv">
                     <h6>LIBRO</h6>
                     <div class="imagenDiv">
-                        <img src="./images/libro__babel_R-F-Kuang.jpg" alt="lb-rfk"> 
+                        <img src="./images/libro__babel_R-F-Kuang.jpg" alt="lb-rfk">
                     </div>
-                        <h5>Babel</h5>
+                    <h5>Babel</h5>
                     <h6>R. F. Kuang</h6>
                     <h6>18,50€</h6>
                 </a>
-                <a href ="#" class="productoDiv">
+                <a href="#" class="productoDiv">
                     <h6>LIBRO</h6>
                     <div class="imagenDiv">
-                        <img src="./images/libro__vencer-al-dragon_Barbara-Hambly.jpg" alt="lvad-bh"> 
+                        <img src="./images/libro__vencer-al-dragon_Barbara-Hambly.jpg" alt="lvad-bh">
                     </div>
-                        <h5>Vencer al Dragón</h5>
+                    <h5>Vencer al Dragón</h5>
                     <h6>Barbara Hambly</h6>
                     <h6>12,30€</h6>
                 </a>
@@ -265,16 +276,15 @@
     </main>
 
     <footer>
-        <div>
-            <div class="parrafoFooter">
-                <p>
-                    Copyright
-                    <img src="./images/copyrightBlanco.svg" alt="copyright" id="copyrightIcono">
-                    2023-2023 La Esquirla del Larkin - Todos los derechos reservados
-                </p>
-            </div>
+        <div class="parrafoFooter">
+            <p>
+                Copyright
+                <img src="./images/copyrightBlanco.svg" alt="copyright" id="copyrightIcono">
+                2023-2023 La Esquirla del Larkin - Todos los derechos reservados
+            </p>
         </div>
     </footer>
 
 </body>
+
 </html>
