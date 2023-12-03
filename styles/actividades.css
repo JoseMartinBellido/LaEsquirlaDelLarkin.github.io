@@ -17,7 +17,7 @@
 
 /*---------------------------------------- Ajustes para el main de actividades ----------------------------------------*/
 
-#mainActividades{
+#main_actividades{
     flex-direction: column;
 }
 
@@ -29,7 +29,7 @@ main>h2{
     font-size: 1.6rem;
 }
 
-#contenedorActividades{
+#contenedor_actividades{
     width:90vw;
 
     display: flex;
@@ -44,7 +44,7 @@ main>h2{
 
 }
 
-.actividadDiv{
+.actividad_div{
     width: 40vw;
     height:auto;
 
@@ -63,7 +63,7 @@ main>h2{
     margin-bottom:8vh;
 }
 
-.actividadDiv h3{
+.actividad_div h3{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,14 +72,14 @@ main>h2{
     height:5rem;
 }
 
-.actividadDiv>h4{
+.actividad_div>h4{
     font-family: var(--fuenteTitulosMenores);
     font-style: var(--cursiva);
     font-size:1rem;
     margin:1vh 0;
 }
 
-.actividadDiv>p{
+.actividad_div>p{
     text-align: justify;
     text-wrap: wrap;
 
@@ -88,13 +88,13 @@ main>h2{
     height:8rem;
 }  
 
-.actividadImagenDiv{
+.actividad_imagen_div{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.actividadImagenDiv>img{
+.actividad_imagen_div>img{
     width: 75%;
     height:auto;
     border: 2px var(--colorBlanco) solid;
@@ -104,7 +104,7 @@ main>h2{
 
 /* Div enlacesPaginas para enlazar con más páginas en la búsqueda o en las actividades*/
 
-.enlacesPaginas{
+.enlaces_paginas{
    width:98vw;
    display: flex;
    justify-content: center;
@@ -112,35 +112,35 @@ main>h2{
 
 }
 
-.enlacesPaginas, .enlacesPaginas a{
+.enlaces_paginas, .enlaces_paginas a{
     text-decoration: none;
     color: var(--colorNegro);
     font-family: var(--fuenteParrafos);
     font-size:1.2rem;
 }
 
-.enlacesPaginas a{
+.enlaces_paginas a{
     margin-right: 0.3vw;
 }
 
 
 
-#paginaMarcada{
+#pagina_marcada{
     color: var(--colorPrincipal);
 }
 
 /*---------------------------------------- Estilos para 1024px - 1240px ----------------------------------------*/
 
 @media (1024px < width <= 1240px){
-    .actividadDiv h3{
+    .actividad_div h3{
         height:4rem;
     }
     
-    .actividadDiv>h4{
+    .actividad_div>h4{
         font-size:1.3vw;
     }
     
-    .actividadDiv>p{
+    .actividad_div>p{
         height:10rem;
         display: flex;
         justify-content: flex-start;
@@ -151,23 +151,23 @@ main>h2{
 /*---------------------------------------- Estilos para 768px - 1024px  ----------------------------------------*/
 
 @media (768px < width <= 1024px){
-    .actividadDiv{
+    .actividad_div{
         width: 80vw;
     }
 
-    .actividadImagenDiv>img{
+    .actividad_imagen_div>img{
         width:65%;
     }
 
-    .actividadDiv h3, .actividadDiv>h4{
+    .actividad_div h3, .actividad_div>h4{
         margin-left: 2vw;
     }
     
-    .actividadDiv h3{
+    .actividad_div h3{
         height:3rem;
     }
 
-    .actividadDiv>p{
+    .actividad_div>p{
         height:auto;
         display: flex;
         justify-content: flex-start;
@@ -180,19 +180,19 @@ main>h2{
 /*---------------------------------------- Estilos para 540px - 768px ----------------------------------------*/
 
 @media (540px < width <= 768px){
-    .actividadDiv{
+    .actividad_div{
         width: 90vw;
     }
 
-    .actividadImagenDiv>img{
+    .actividad_imagen_div>img{
         width:65%;
     }
 
-    .actividadDiv h3, .actividadDiv>h4{
+    .actividad_div h3, .actividad_div>h4{
         margin-left: 2vw;
     }
 
-    .actividadDiv>p{
+    .actividad_div>p{
         height:auto;
         display: flex;
         justify-content: flex-start;
@@ -205,28 +205,28 @@ main>h2{
 /*---------------------------------------- Estilos para tamaños menores a 540px ----------------------------------------*/
 
 @media (width < 540px){
-    .actividadDiv{
+    .actividad_div{
         width: 90vw;
     }
 
-    .actividadImagenDiv>img{
+    .actividad_imagen_div>img{
         width:65%;
     }
 
-    .actividadDiv h3, .actividadDiv>h4{
+    .actividad_div h3, .actividad_div>h4{
         margin-left: 2vw;
     }
     
-    .actividadDiv h3{
+    .actividad_div h3{
         font-size:1.1rem;
         height:4rem;
     }
 
-    .actividadDiv>h4{
+    .actividad_div>h4{
         font-size:0.95rem;
     }
 
-    .actividadDiv>p{
+    .actividad_div>p{
         font-size:1rem; 
         height:auto;
         display: flex;

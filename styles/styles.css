@@ -34,7 +34,7 @@ header{
     border: 1px black solid;
 }
 
-.enlaceIndex{
+.enlace_index{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +43,7 @@ header{
     color:var(--colorNegro);
 }
 
-#logoDiv{
+#logo_div{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,13 +58,13 @@ header{
     width:4vw;
 
 }
-#logoConBorde{
+#logo_con_borde{
     width:4vw;
     display: none;
 }
 
 /* Al título de la página le damos display flex para hacerlo en 2 líneas en columna y darle distintos márgenes*/
-#tituloPagina{
+#titulo_pagina{
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -76,22 +76,22 @@ header{
     width: 25vw;
 }
 
-#finalTitulo{
+#final_titulo{
     margin-left: 1.3vw;
 }
 
 /* Aquello a lo que modifica un hover en enlaceIndex*/
 
 @media (hover:hover){
-    .enlaceIndex:hover #logo{
+    .enlace_index:hover #logo{
         display:none;
     }
     
-    .enlaceIndex:hover #logoConBorde{
+    .enlace_index:hover #logo_con_borde{
         display:block;
     }
     
-    .enlaceIndex:hover #tituloPagina{
+    .enlace_index:hover #titulo_pagina{
         text-decoration: underline;
     }
 }
@@ -113,7 +113,7 @@ header{
     border-radius: 5px;
 }
 
-.inputBuscador{
+.input_buscador{
     width:100%;
     padding: 1.4vh 1vw;
 
@@ -131,7 +131,7 @@ header{
 }
 
 
-#botonBusqueda{
+#boton_busqueda{
     margin-right:0.8vw;
     border: none;
     background-color: var(--colorBlanco);
@@ -146,18 +146,18 @@ header{
     margin:auto;
 }
 
-#lupaBusquedaNegra{
+#lupa_busqueda_negra{
     width:1.5vw;
 }
 
-#lupaBusquedaBlanca{
+#lupa_busqueda_blanca{
     width:1.5vw;
     display:none;
 }
 
 /* Buscador sólo para tablet y móvil */
 
-#buscadorMovilTablet{
+#buscador_movil_tablet{
     width:90vw;
     display:none;
 }
@@ -167,44 +167,44 @@ header{
  /* Modificaciones del botón de búsqueda cuando tenemos hover */
 
  @media (hover:hover){
-    #botonBusqueda:hover{
+    #boton_busqueda:hover{
         border-radius: 12px;
         background-color: var(--colorPrincipal);
         cursor: pointer;
     }
     
-    #botonBusqueda:hover #lupaBusquedaNegra{
+    #boton_busqueda:hover #lupa_busqueda_negra{
         display:none;
     }
     
-    #botonBusqueda:hover #lupaBusquedaBlanca{ 
+    #boton_busqueda:hover #lupa_busqueda_blanca{ 
         display: block;
     }
  }
 
 
 /* Enlace al inicio de sesión y al carrito de compra */
-.enlacesIconos{
+.enlaces_iconos{
     margin-right:2vw;
 }
 
 
 /* Enlace al inicio de sesión y hover */
-#iconoInicioSesionB{
+#icono_inicio_sesion_b{
     display:block;
 }
 
-#iconoInicioSesionN{
+#icono_inicio_sesion_n{
    display:none;
 }
 
 @media (hover:hover){
 
-    #enlaceIS:hover #iconoInicioSesionB{
+    #enlace_is:hover #icono_inicio_sesion_b{
         display:none;
     }
 
-    #enlaceIS:hover #iconoInicioSesionN{
+    #enlace_is:hover #icono_inicio_sesion_n{
         display:block;
     }
 
@@ -212,25 +212,25 @@ header{
 
 /* Enlace al carrito de la compra y hover */
 
-#iconoCarritoB{
+#icono_carrito_b{
     display:block;
 }
 
-#iconoCarritoN{
+#icono_carrito_n{
     display:none;
 }
 
 @media (hover:hover){
-    #enlaceCC:hover #iconoCarritoB{
+    #enlace_cc:hover #icono_carrito_b{
         display:none;
     }
 
-    #enlaceCC:hover #iconoCarritoN{
+    #enlace_cc:hover #icono_carrito_n{
         display:block;
     }
 }
 
-.contenedorIconos{
+.contenedor_iconos{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -242,7 +242,7 @@ header{
     border-radius: 50%;
 }
 
-.contenedorIconos > img{
+.contenedor_iconos > img{
     width:1.8vw;
 }
 
@@ -280,7 +280,7 @@ nav a{
 }
 
 
-.botonDesplegable {
+.boton_desplegable {
     background-color: var(--colorPrincipal);
     color: var(--colorBlanco);
     padding: 1rem;
@@ -288,22 +288,22 @@ nav a{
     border: none;
 }
 
-.botonDesplegable img{
+.boton_desplegable img{
     width:0.7rem;
     margin-left: 0.2vw;
 }
 
-#iconoDesplegableN{
+#icono_desplegable_n{
     display: none;
 }
 
-.interiorDesplegable {
+.interior_desplegable {
     display: none;
     position: absolute;
     background-color: var(--colorPrincipal);
 }
 
-.interiorDesplegable a {
+.interior_desplegable a {
     color: var(--colorBlanco);
     padding: 1vh 1vw;
     text-decoration: none;
@@ -311,7 +311,7 @@ nav a{
 }
 
 @media (hover:hover){
-    .interiorDesplegable a:hover {
+    .interior_desplegable a:hover {
         color: var(--colorNegro);
     }
 }
@@ -319,37 +319,37 @@ nav a{
   
 /* Aquí desplegamos el contenido de los enlaces y les cambiamos el color a la letra con el hover */
 
-.desplegable:focus-within #iconoDesplegableB{
+.desplegable:focus-within #icono_desplegable_b{
     display: none;
 }
-.desplegable:focus-within #iconoDesplegableN{
+.desplegable:focus-within #icono_desplegable_n{
     display: inline;
 }
 
 @media (hover:hover){
-    .desplegable:hover #iconoDesplegableB {
+    .desplegable:hover #icono_desplegable_b {
         display: none;
     }
     
-    .desplegable:hover #iconoDesplegableN {
+    .desplegable:hover #icono_desplegable_n {
         display: inline;
     }
 }
 
-.desplegable:focus-within .interiorDesplegable{
+.desplegable:focus-within .interior_desplegable{
     display: block;
 }
 
-.desplegable:focus-within .botonDesplegable {
+.desplegable:focus-within .boton_desplegable {
     color:var(--colorNegro);
 }
 
 @media (hover:hover){
-    .desplegable:hover .interiorDesplegable {
+    .desplegable:hover .interior_desplegable {
         display: block;
     }
     
-    .desplegable:hover .botonDesplegable {
+    .desplegable:hover .boton_desplegable {
         color:var(--colorNegro);
     }
 }
@@ -395,75 +395,76 @@ footer p{
 
         /* Ajustes para el header para tablets */
 
-    header{
-        height:6.5rem;
-    }
+        header{
+            height:6.5rem;
+        }
+    
+        #logo_div{
+            width:5rem;
+            margin: auto 2vw auto 2vw;
+        }
+    
+        #logo, #logo_con_borde{
+            width:4rem; 
+        }
+    
+        #titulo_pagina{
+            flex-direction:row;
+            font-size: 0.8rem;
+            width:60vw;
+            margin-left:1vw;
+        }
+    
+        #comienzo_titulo, #final_titulo{
+            width: 9.4rem;
+            text-align: left;
+        }
+    
+        #comienzo_titulo{
+            margin-right:0;
+        }
+    
+        #final_titulo{
+            margin-left:0;
+        }
+    
+        .buscador{
+            display:none;
+        }
+    
+        .enlaces_iconos, .contenedor_iconos{
+            width:2.2rem;
+            height:2.2rem;
+        }
+    
+        .contenedor_iconos>img{
+            width:1.6rem;
+        }
 
-    #logoDiv{
-        width:6rem;
-        margin: auto 1vw auto 4vw;
-    }
-
-    #logo, #logoConBorde{
-        width:5rem; 
-    }
-
-    #tituloPagina{
-        flex-direction:row;
-        width:60vw;
-        margin-left:1vw;
-    }
-
-    #comienzoTitulo, #finalTitulo{
-        width: 10.6rem;
-        text-align: left;
-    }
-
-    #comienzoTitulo{
-        margin-right:0;
-    }
-
-    #finalTitulo{
-        margin-left:0;
-    }
-
-    .buscador{
-        display:none;
-    }
-
-    .enlacesIconos, .contenedorIconos{
-        width:3rem;
-        height:3rem;
-    }
-
-    .contenedorIconos>img{
-        width:2rem;
-    }
-
-    #buscadorMovilTablet{
+    #buscador_movil_tablet{
         width:90vw;
         display:flex;
     }
 
-    #buscadorMovilTablet .inputBuscador{
+    #buscador_movil_tablet .input_buscador{
         width:100%;
         padding: 0.8vh 0.5vw;
     }
 
     /* Ajustes del buscador para móviles y tablets */
 
-    #buscadorMovilTablet{
+    #buscador_movil_tablet{
         width:80vw;
         display:flex;
         margin-top:2vw;
     }
 
-    .inputBuscador{
+    .input_buscador{
         width:100%;
         padding: 0.8vh 0.5vw;
     }
 
-    #botonBusqueda{
+    #boton_busqueda{
         margin-right:0.8vw;
         border: none;
         background-color: var(--colorBlanco);
@@ -472,7 +473,7 @@ footer p{
         height:2.6rem;
     }
 
-    #lupaBusquedaNegra, #lupaBusquedaBlanca{
+    #lupa_busqueda_negra, #lupa_busqueda_blanca{
         width:1.6rem;
     }
 }
@@ -487,32 +488,32 @@ footer p{
         height:6.5rem;
     }
 
-    #logoDiv{
+    #logo_div{
         width:5rem;
         margin: auto 2vw auto 2vw;
     }
 
-    #logo, #logoConBorde{
+    #logo, #logo_con_borde{
         width:4rem; 
     }
 
-    #tituloPagina{
+    #titulo_pagina{
         flex-direction:row;
         font-size: 0.8rem;
         width:60vw;
         margin-left:1vw;
     }
 
-    #comienzoTitulo, #finalTitulo{
+    #comienzo_titulo, #final_titulo{
         width: 9.4rem;
         text-align: left;
     }
 
-    #comienzoTitulo{
+    #comienzo_titulo{
         margin-right:0;
     }
 
-    #finalTitulo{
+    #final_titulo{
         margin-left:0;
     }
 
@@ -520,12 +521,12 @@ footer p{
         display:none;
     }
 
-    .enlacesIconos, .contenedorIconos{
+    .enlaces_iconos, .contenedor_iconos{
         width:2.2rem;
         height:2.2rem;
     }
 
-    .contenedorIconos>img{
+    .contenedor_iconos>img{
         width:1.6rem;
     }
 
@@ -536,7 +537,7 @@ footer p{
         flex-direction: column;
     }
 
-    nav a, .botonDesplegable{
+    nav a, .boton_desplegable{
         font-size:1.1rem;
     
         margin-top: 0.8vh;
@@ -545,7 +546,7 @@ footer p{
     }
 
 
-    .desplegable:focus-within .interiorDesplegable, .desplegable:hover .interiorDesplegable{
+    .desplegable:focus-within .interior_desplegable, .desplegable:hover .interior_desplegable{
         position: relative;
         display: flex;
         flex-direction: column;
@@ -563,24 +564,24 @@ footer p{
     }
 
     
-    .interiorDesplegable a{
+    .interior_desplegable a{
         color: var(--colorNegro);
     }
     
     /* Ajustes para el buscador de móviles y tablets */
 
-    #buscadorMovilTablet{
+    #buscador_movil_tablet{
         width:80vw;
         display:flex;
         margin-top:2vw;
     }
 
-    .inputBuscador{
+    .input_buscador{
         width:100%;
         padding: 0.8vh 0.5vw;
     }
 
-    #botonBusqueda{
+    #boton_busqueda{
         margin-right:0.8vw;
         border: none;
         background-color: var(--colorBlanco);
@@ -589,7 +590,7 @@ footer p{
         height:2.6rem;
     }
 
-    #lupaBusquedaNegra, #lupaBusquedaBlanca{
+    #lupa_busqueda_negra, #lupa_busqueda_blanca{
         width:1.6rem;
     }
 
@@ -612,31 +613,31 @@ footer p{
         height:6.5rem;
     }
 
-    #logoDiv{
+    #logo_div{
         width:5rem;
         margin: auto 2vw auto 2vw;
     }
 
-    #logo, #logoConBorde{
+    #logo, #logo_con_borde{
         width:4rem; 
     }
 
-    #tituloPagina{
+    #titulo_pagina{
         flex-direction:column;
         width:45vw;
     }
 
-    #comienzoTitulo, #finalTitulo{
+    #comienzo_titulo, #final_titulo{
         width: 9rem;
         text-align: left;
         font-size: 1.4rem;
     }
 
-    #comienzoTitulo{
+    #comienzo_titulo{
         margin-left:2vw;
     }
 
-    #finalTitulo{
+    #final_titulo{
         margin-left:10vw;
     }
 
@@ -644,12 +645,12 @@ footer p{
         display:none;
     }
 
-    .enlacesIconos, .contenedorIconos{
+    .enlaces_iconos, .contenedor_iconos{
         width:2.2rem;
         height:2.2rem;
     }
 
-    .contenedorIconos>img{
+    .contenedor_iconos>img{
         width:1.6rem;
     }
 
@@ -660,7 +661,7 @@ footer p{
         flex-direction: column;
     }
 
-    nav a, .botonDesplegable{
+    nav a, .boton_desplegable{
         font-size:1.1rem;
     
         margin-top: 0.8vh;
@@ -669,7 +670,7 @@ footer p{
     }
 
 
-    .desplegable:focus-within .interiorDesplegable, .desplegable:hover .interiorDesplegable{
+    .desplegable:focus-within .interior_desplegable, .desplegable:hover .interior_desplegable{
         position: relative;
         display: flex;
         flex-direction: column;
@@ -687,24 +688,24 @@ footer p{
     }
 
     
-    .interiorDesplegable a{
+    .interior_desplegable a{
         color: var(--colorNegro);
     }
     
     /* Ajustes para el buscador de móviles y tablets */
 
-    #buscadorMovilTablet{
+    #buscador_movil_tablet{
         width:80vw;
         display:flex;
         margin-top:2vw;
     }
 
-    .inputBuscador{
+    .input_buscador{
         width:100%;
         padding: 0.8vh 0.5vw;
     }
 
-    #botonBusqueda{
+    #boton_busqueda{
         margin-right:0.8vw;
         border: none;
         background-color: var(--colorBlanco);
@@ -713,7 +714,7 @@ footer p{
         height:2.6rem;
     }
 
-    #lupaBusquedaNegra, #lupaBusquedaBlanca{
+    #lupa_busqueda_negra, #lupa_busqueda_blanca{
         width:1.6rem;
     }
 

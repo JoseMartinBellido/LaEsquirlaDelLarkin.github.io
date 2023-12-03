@@ -18,7 +18,7 @@
 
 /* Hoja de estilos para un futuro carrito de la compra. Ahora mismo solo muestra el mensaje marcado en el html*/
 
-#mainCarritoCompra{
+#main_carrito_compra{
     height:75vh;
     width:98vw;
 }
@@ -38,7 +38,7 @@ h2{
 
 @media ( width <= 768px){
     
-    #mainCarritoCompra{
+    #main_carrito_compra{
         height:115vh;
         width:98vw;
     }

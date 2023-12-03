@@ -20,7 +20,7 @@
 
 /*---------------------------------------- Ajustes div que ordena la Página ----------------------------------------*/
 
-.ordenProductosDiv{
+.orden_productos_div{
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -28,12 +28,12 @@
     margin: 3vh 5vw 2vh 0;
 }
 
-.ordenProductosDiv>p{
+.orden_productos_div>p{
     font-family: var(--fuenteParrafos);
     font-size:1.1rem;
 }
 
-.ordenProductosSelect{
+.orden_productos_select{
     border: 1px var(--colorNegro) solid;
     border-radius: 5px;
     padding:0.3vw;
@@ -42,7 +42,7 @@
 
 /*---------------------------------------- Ajustes main ----------------------------------------*/
 
-#mainIndex{
+#main_index{
     flex-direction: column;
 }
 
@@ -60,14 +60,14 @@ section{
 
 /*---------------------------------------- Ajustes aside ----------------------------------------*/
 
-.asideForm>h2{
+.aside_form>h2{
     font-size: 1.6rem;
     font-family: var(--fuenteTitulosMenores);
     margin-bottom: 1vh;
     margin-left:2vw;
 }
 
-.asideForm{
+.aside_form{
     display:flex;
     justify-content: center;
     align-items: flex-start;
@@ -76,18 +76,18 @@ section{
 
 /* Filtrado por nombre de autor o de título */
 
-.filtroDiv{
+.filtro_div{
     display:flex;
     flex-direction: column;
     margin-left: 2vw;
     padding: 0.3vw;
 }
 
-.filtroLabel, .filtroInput{
+.filtro_label, .filtro_input{
     display:block;
 }
 
-.filtroLabel{
+.filtro_label{
     font-family: var(--fuenteTitulosMenores);
     font-size: 1rem;
     margin-top:0.6vh;
@@ -95,20 +95,20 @@ section{
 }
 
 
-.filtroInput{
+.filtro_input{
     border: 2px var(--colorNegro) solid;
     width: 12vw;
     padding: 0.5vh 1vw;
 }
 @media (hover:hover){
-    .filtroInput:hover, .filtroInput:focus{
+    .filtro_input:hover, .filtro_input:focus{
         border:2px var(--colorPrincipal) solid;
     }
 }
 
 /* Filtrado por características */
 
-.asideForm>h3{
+.aside_form>h3{
     font-family:var(--fuenteTitulosMenores);
     margin-top:2vh;
     font-size: 1.1rem;
@@ -117,7 +117,7 @@ section{
 }
 
 
-.checkboxDiv{
+.checkbox_div{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -126,13 +126,13 @@ section{
     margin-top: 1vh;
 }
 
-.checkboxDiv>input{
+.checkbox_div>input{
     margin-right: 1vw;
     width:1.2vw;
     height:1.2vw;
 }
 
-.checkboxDiv>label{
+.checkbox_div>label{
     font-size:1.1rem;
     font-family: var(--fuenteParrafos);
     font-weight: 700;
@@ -140,13 +140,13 @@ section{
 
 /* Filtrado por precio */
 
-.filtroDivPrecio{
+.filtro_div_precio{
     margin-left: 2vw;
 }
 
 /* Ajustes de los divs para los productos y todo el contenido */
 
-#destacados, #nuevosLanzamientos, .productos{
+#destacados, #nuevos_lanzamientos, .productos{
     display: flex;
     justify-content:space-evenly;
     align-items: center;
@@ -159,7 +159,7 @@ section{
     border-radius:5px;
 }
 
-#destacados, #nuevosLanzamientos{
+#destacados, #nuevos_lanzamientos{
     background-color: var(--colorPrincipal);
     border: 2px var(--colorNegro) solid;
     border-radius:5px;
@@ -167,7 +167,7 @@ section{
 }
 
 
-#mainIndex>h2{
+#main_index>h2{
     font-family: var(--fuenteTitulos);
     font-size:1.6rem;
     margin-top:3vh;
@@ -175,7 +175,7 @@ section{
     margin-left:5vw;
 }
 
-.productoDiv{
+.producto_div{
     width:14vw;
     text-decoration: none;
     color: var(--colorNegro);
@@ -193,12 +193,12 @@ section{
 }
 
 @media (hover:hover){
-    .productoDiv>h5:hover{
+    .producto_div>h5:hover{
         color:var(--colorPrincipal);
     }
 }
 
-.imagenDiv{
+.imagen_div{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -206,12 +206,12 @@ section{
     height:20vw;
 }
 
-.productoDiv img{
+.producto_div img{
     width:80%;
     height:auto;
 }
 
-.productoDiv>h5{
+.producto_div>h5{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -223,7 +223,7 @@ section{
     margin: 0 0.5vw;
 }
 
-.productoDiv>h6{
+.producto_div>h6{
     font-family: var(--fuenteTitulosMenores);
     font-style:var(--cursiva);
     font-size:0.85rem;
@@ -232,7 +232,7 @@ section{
 
 /* Div enlacesPaginas para enlazar con más páginas en la búsqueda o en las actividades*/
 
-.enlacesPaginas, .enlacesPaginas a{
+.enlaces_paginas, .enlaces_paginas a{
     text-decoration: none;
     margin-left: 0.3vw;
     color: var(--colorNegro);
@@ -240,24 +240,20 @@ section{
     font-size:1.2rem;
 }
 
-#paginaMarcada{
+#pagina_marcada{
     color: var(--colorPrincipal);
 }
 
-/*---------------------------------------- Estilos para 768px - 1024px ----------------------------------------*/
-
-.ultimoIndex{
-    display:none;
-}
+/*---------------------------------------- Estilos para 1024px - 1240px ----------------------------------------*/
 
 @media (1024px < width <= 1240px){
 
-    .productoDiv>h5{
+    .producto_div>h5{
         height: 5rem;
         font-size:0.9rem;
     }
 
-    .productoDiv>h6{
+    .producto_div>h6{
         font-size:0.75rem;
     }
 
@@ -266,7 +262,7 @@ section{
 /*---------------------------------------- Estilos para 768px - 1024px ----------------------------------------*/
 
 /* Este elemento sólo funciona para tablet para que sea un número par de elementos y que, al hacer el wrap el flex no queden espacios */
-.ultimoIndex{
+.ultimo_index{
     display:none;
 }
 
@@ -285,28 +281,28 @@ section{
         margin-left:0;
     }
 
-    .productoDiv{
+    .producto_div{
         width:36vw;
     }
 
-    .imagenDiv{
+    .imagen_div{
         width:36vw;
         height:40vw;
     }
 
-    .ultimoIndex{
+    .ultimo_index{
         display:flex;
     }
 
-    .productoDiv img{
+    .producto_div img{
         width:75%;
     }
 
-    .productoDiv>h5{
+    .producto_div>h5{
         font-size:1.3rem;
     }
 
-    .productoDiv>h6{
+    .producto_div>h6{
         font-size:1rem;
     }
 
@@ -329,28 +325,28 @@ section{
         margin-left:0;
     }
 
-    .productoDiv{
+    .producto_div{
         width:36vw;
     }
 
-    .imagenDiv{
+    .imagen_div{
         width:36vw;
         height:50vw;
     }
 
-    .ultimoIndex{
+    .ultimo_index{
         display:flex;
     }
 
-    .productoDiv img{
+    .producto_div img{
         width:85%;
     }
 
-    .productoDiv>h5{
+    .producto_div>h5{
         font-size: 1.1rem;
     }
 
-    .productoDiv>h6{
+    .producto_div>h6{
         font-size: 0.9rem;
     }
 
@@ -372,28 +368,28 @@ section{
         margin-left:0;
     }
 
-    .productoDiv{
+    .producto_div{
         width:70vw;
     }
 
-    .imagenDiv{
+    .imagen_div{
         width:70vw;
         height:90vw;
     }
 
-    .ultimoIndex{
+    .ultimo_index{
         display:none;
     }
 
-    .productoDiv img{
+    .producto_div img{
         width:85%;
     }
 
-    .productoDiv>h5{
+    .producto_div>h5{
         font-size: 1.2rem;
     }
 
-    .productoDiv>h6{
+    .producto_div>h6{
         font-size: 1rem;
     }
 

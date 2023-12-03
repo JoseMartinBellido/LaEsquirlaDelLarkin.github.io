@@ -19,7 +19,7 @@
 
 /* ----------------------------- Reglas de estilo para el main  --------------------------------- */
 
-#mainInicioSesion{
+#main_inicio_sesion{
     padding:2vw;
 }
 
@@ -33,11 +33,11 @@ main h2{
     font-size: 1.6rem;
 }
 
-#tituloRegistro{
+#titulo_registro{
     width:48vw;
 
 }
-#sesionDivContenedor{
+#sesion_div_contenedor{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -52,7 +52,7 @@ form{
     flex-wrap: wrap;
 }
 
-.inputTextoDiv{
+.input_texto_div{
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -61,14 +61,14 @@ form{
     margin-left:2vw;
 }
 
-.inputTextoDiv label{
+.input_texto_div label{
     margin-bottom:1.5vh;
 
     font-family: var(--fuenteTitulosMenores);
     font-size:1rem;
 }
 
-.inputTextoDiv input{
+.input_texto_div input{
     width:22vw;
     border: 2px var(--colorNegro) solid;
     border-radius:5px;
@@ -87,11 +87,11 @@ form{
 
 /* Ajustes específicos del formulario de Inicio de Sesión */
 
-#formularioInicio{
+#formulario_inicio{
     width:30vw;
 }
 
-#botonInicio{
+#boton_inicio{
     width: 8vw;
     border-radius: 5px;
     font-size:1rem;
@@ -101,7 +101,7 @@ form{
 }
 
 @media (hover:hover){
-    #botonInicio:hover{
+    #boton_inicio:hover{
         border: 2px var(--colorNegro) solid;
         background-color: var(--colorPrincipal);
         color:var(--colorBlanco);
@@ -109,7 +109,7 @@ form{
     }
 }
 
-#formularioInicio a{
+#formulario_inicio a{
     text-decoration: none;
     font-family: var(--fuenteTitulosMenores);
     font-size: 0.8rem;
@@ -118,21 +118,21 @@ form{
 }
 
 @media (hover:hover){
-    #formularioInicio a:hover{
+    #formulario_inicio a:hover{
         color: var(--colorPrincipal);
     }
 }
 
 /* Ajustes específicos del formulario de Registro */
 
-#formularioRegistro{
+#formulario_registro{
     width:60vw;
     border-left: 2px black solid;
 }
 
 /* Género */
 
-.inputRadioDiv{
+.input_radio_div{
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -142,14 +142,14 @@ form{
     width:26vw;
 }
 
-#tituloGenero{
+#titulo_genero{
     margin-bottom:1.5vh;
 
     font-family: var(--fuenteTitulosMenores);
     font-size:1rem;
 }
 
-#opcionesGenero{
+#opciones_genero{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -157,36 +157,36 @@ form{
     width: 30vw;
 }
 
-#opcionesGenero label{
+#opciones_genero label{
     margin-left:0.3vw;
     font-family: var(--fuenteParrafos);
     font-size:1rem;
 
 }
-#opcionesGenero input{
+#opciones_genero input{
     margin-left:1vw;
 }
 
 /* Fecha de nacimiento */
 
-.inputFechaDiv{
+.input_fecha_div{
     width:30vw;
 }
 
-.inputFechaDiv label{
+.input_fecha_div label{
     font-family: var(--fuenteTitulosMenores);
     font-size: 0.95rem;
     margin-right: 0.5vw;
 }
 
-.inputFechaDiv input{
+.input_fecha_div input{
     padding:0.2vw;
     border-radius:5px;
     font-family: var(--fuenteParrafos);
     font-size: 0.9rem;
 }
 
-.inputCondicionesDiv{
+.input_condiciones_div{
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -197,13 +197,13 @@ form{
     margin-top:4vh;
 }
 
-.inputCondicionesDiv label{
+.input_condiciones_div label{
     font-family: var(--fuenteParrafos);
     font-size: 0.9rem;
     margin-left: 0.5vw;
 }
 
-#botonRegistro{
+#boton_registro{
     width: 8vw;
     border-radius: 5px;
     font-size:1rem;
@@ -214,7 +214,7 @@ form{
 }
 
 @media (hover:hover){
-    #botonRegistro:hover{
+    #boton_registro:hover{
         border: 2px var(--colorNegro) solid;
         background-color: var(--colorPrincipal);
         color:var(--colorBlanco);
@@ -226,19 +226,19 @@ form{
 
 @media (768px < width <= 1024px){
 
-    #mainInicioSesion{
+    #main_inicio_sesion{
         flex-wrap: wrap;
     }
 
-    #formularioInicio>h2{
+    #formulario_inicio>h2{
         margin-left:0;
     }
 
-    .inputTextoDiv input{
+    .input_texto_div input{
         width:30vw;
     }
 
-    #formularioInicio{
+    #formulario_inicio{
         width: 50vw;
         flex-direction: column;
         margin-bottom:10vh;
@@ -247,7 +247,7 @@ form{
         padding:2vw;
     }
 
-    #formularioRegistro{
+    #formulario_registro{
         width: 85vw;
         border-left: none;
         border: 2px var(--colorNegro) solid;
@@ -255,36 +255,36 @@ form{
         padding:2vw;
 
     }
-    .inputRadioDiv{
+    .input_radio_div{
         width:34vw;
     }
 
-    #opcionesGenero{
+    #opciones_genero{
         width:35vw;
     }
 
-    #opcionesGenero label{
+    #opciones_genero label{
         font-size:0.9rem;
     
     }
 
-    .inputFechaDiv{
+    .input_fecha_div{
         width:44vw;
     }
 
-    .inputFechaDiv label{
+    .input_fecha_div label{
         margin-right: 1vw;
     }
 
-    #botonInicio{
+    #boton_inicio{
         margin-left: 0;
     }
 
-    .inputCondicionesDiv{
+    .input_condiciones_div{
         width:85vw;
     }
 
-    #botonRegistro{
+    #boton_registro{
         margin-left:36vw;
         width:6rem;
     }
@@ -295,19 +295,19 @@ form{
 
 @media (540px < width <= 768px){
 
-    #mainInicioSesion{
+    #main_inicio_sesion{
         flex-wrap: wrap;
     }
 
-    #formularioInicio>h2{
+    #formulario_inicio>h2{
         margin-left:0;
     }
 
-    .inputTextoDiv input{
+    .input_texto_div input{
         width:35vw;
     }
 
-    #formularioInicio{
+    #formulario_inicio{
         width: 60vw;
         flex-direction: column;
         margin-top: 3vh;
@@ -317,12 +317,12 @@ form{
         padding:2vw;
     }
 
-    #botonInicio{
+    #boton_inicio{
         width:5rem;
         margin-left: 0;
     }
 
-    #formularioRegistro{
+    #formulario_registro{
         width: 90vw;
         border-left: none;
         border: 2px var(--colorNegro) solid;
@@ -330,25 +330,25 @@ form{
         padding:2vw;
 
     }
-    .inputRadioDiv{
+    .input_radio_div{
         width:42vw;
         margin-right:0;
     }
 
-    #tituloGenero{
+    #titulo_genero{
         width:35vw;
     }
 
-    #opcionesGenero{
+    #opciones_genero{
         width:42vw;
     }
 
-    #opcionesGenero label{
+    #opciones_genero label{
         font-size:0.9rem;
     
     }
 
-    .inputFechaDiv{
+    .input_fecha_div{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -358,15 +358,15 @@ form{
     }
 
 
-    .inputCondicionesDiv{
+    .input_condiciones_div{
         width:90vw;
     }
 
-    .inputCondicionesDiv label{
+    .input_condiciones_div label{
         font-size:0.85rem;
     }
 
-    #botonRegistro{
+    #boton_registro{
         margin-left:36vw;
         width:6rem;
     }
@@ -377,19 +377,19 @@ form{
 
 @media (width < 540px){
 
-    #mainInicioSesion{
+    #main_inicio_sesion{
         flex-wrap: wrap;
     }
 
-    #formularioInicio>h2{
+    #formulario_inicio>h2{
         margin-left:0;
     }
 
-    .inputTextoDiv input{
+    .input_texto_div input{
         width:35vw;
     }
 
-    #formularioInicio{
+    #formulario_inicio{
         width: 60vw;
         flex-direction: column;
         margin-top: 3vh;
@@ -399,12 +399,12 @@ form{
         padding:2vw;
     }
 
-    #botonInicio{
+    #boton_inicio{
         width:5rem;
         margin-left: 0;
     }
 
-    #formularioRegistro{
+    #formulario_registro{
         width: 90vw;
         border-left: none;
         border: 2px var(--colorNegro) solid;
@@ -412,41 +412,41 @@ form{
         padding:2vw;
 
     }
-    .inputRadioDiv{
+    .input_radio_div{
         width:90vw;
         margin-right:0;
     }
 
-    #tituloGenero{
+    #titulo_genero{
         width:70vw;
     }
 
-    #opcionesGenero{
+    #opciones_genero{
         width:90vw;
     }
 
-    #opcionesGenero label{
+    #opciones_genero label{
         font-size:0.9rem;
         margin-right:auto;
         margin-left: auto;
     
     }
 
-    .inputFechaDiv{
+    .input_fecha_div{
         width:90vw;
         margin-top: 3vh;
         margin-left:2vw;
     }
 
-    .inputCondicionesDiv{
+    .input_condiciones_div{
         width:90vw;
     }
 
-    .inputCondicionesDiv label{
+    .input_condiciones_div label{
         font-size:0.8rem;
     }
 
-    #botonRegistro{
+    #boton_registro{
         margin-left:36vw;
         width:6rem;
     }

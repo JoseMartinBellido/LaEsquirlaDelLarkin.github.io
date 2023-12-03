@@ -18,7 +18,7 @@
 
 /* ----------------------------- Reglas de estilo para el main  --------------------------------- */
 
-#mainLibreria{
+#main_libreria{
     flex-direction: column;
 }
 
@@ -33,7 +33,7 @@ main>h2{
 
 /* Reglas de estilo para localizacionDiv */
 
-.localizacionDiv{
+.localizacion_div{
     width:90vw;
 
     display: flex;
@@ -48,7 +48,7 @@ main>h2{
 }
 
 
-#descripcionLocalizacion{
+#descripcion_localizacion{
     padding-left:5vw;
     padding-right:5vw;
 
@@ -62,7 +62,7 @@ main>h2{
 
 }
 
-#descripcionLocalizacion>h5 {
+#descripcion_localizacion>h5 {
     font-family:var(--fuenteTitulosMenores);
     font-size: 1.6rem;
 
@@ -70,7 +70,7 @@ main>h2{
     margin-bottom:1vh;
 }
 
-#descripcionLocalizacion>h6 {
+#descripcion_localizacion>h6 {
     font-family:var(--fuenteTitulosMenores);
     font-style: var(--cursiva);
     font-size: 1.4rem;
@@ -79,14 +79,14 @@ main>h2{
     margin-bottom:1vh;
 }
 
-#descripcionLocalizacion li, #descripcionLocalizacion>p{
+#descripcion_localizacion li, #descripcion_localizacion>p{
     font-family: var(--fuenteParrafos);
     font-size: 1.1rem;
 
     margin-top:0.5vh;
 }
 
-#descripcionLocalizacion li{
+#descripcion_localizacion li{
     margin-left: 3vw;
 }
 
@@ -94,22 +94,22 @@ main>h2{
 
 @media (768px < width <= 1024px){
     
-    .localizacionDiv{
+    .localizacion_div{
         flex-direction: column;
     }
 
-    #descripcionLocalizacion{
+    #descripcion_localizacion{
         margin-bottom: 8vh;
     }
 }
 
 /*---------------------------------------- Estilos para 500px - 768px  ----------------------------------------*/
 
-#mapaDivMovil{
+#mapa_div_movil{
     display:none;
 }
 
-#mapaDivMovilPeque{
+#mapa_div_movil_peque{
     display:none;
 }
 
@@ -119,33 +119,33 @@ main>h2{
         font-size: 1.4rem;
     }
 
-    .localizacionDiv{
+    .localizacion_div{
         flex-direction: column;
     }
 
-    #descripcionLocalizacion{
+    #descripcion_localizacion{
         margin-bottom: 8vh;
     }
 
-    #descripcionLocalizacion>h5 {
+    #descripcion_localizacion>h5 {
         font-size: 1.3rem;
 
     }
     
-    #descripcionLocalizacion>h6 {
+    #descripcion_localizacion>h6 {
         font-size: 1.1rem;
 
     }
     
-    #descripcionLocalizacion li, #descripcionLocalizacion>p{
+    #descripcion_localizacion li, #descripcion_localizacion>p{
         font-size: 1rem;
     }
 
-    #mapaDiv{
+    #mapa_div{
         display:none;
     }
 
-    #mapaDivMovil{
+    #mapa_div_movil{
         display:block;
     }
 }
@@ -158,33 +158,33 @@ main>h2{
         font-size: 1.3rem;
     }
 
-    .localizacionDiv{
+    .localizacion_div{
         flex-direction: column;
     }
 
-    #descripcionLocalizacion{
+    #descripcion_localizacion{
         margin-bottom: 8vh;
     }
 
-    #descripcionLocalizacion>h5 {
+    #descripcion_localizacion>h5 {
         font-size: 1.2rem;
 
     }
     
-    #descripcionLocalizacion>h6 {
+    #descripcion_localizacion>h6 {
         font-size: 1rem;
 
     }
     
-    #descripcionLocalizacion li, #descripcionLocalizacion>p{
+    #descripcion_localizacion li, #descripcion_localizacion>p{
         font-size: 1rem;
     }
 
-    #mapaDiv{
+    #mapa_div{
         display:none;
     }
 
-    #mapaDivMovilPeque{
+    #mapa_div_movil_peque{
         display:block;
     }
 }
