@@ -12,6 +12,7 @@
     --colorSecundario:#FF9900;
     --colorNegro: #000000;
     --colorBlanco: #ffffff;
+    --colorFondo: #fbfbfb;
 
     --cursiva: italic;
 }
@@ -93,6 +94,10 @@ main>h2{
 /*---------------------------------------- Estilos para 768px - 1024px ----------------------------------------*/
 
 @media (768px < width <= 1024px){
+
+    main{
+        width:100vw;
+    }
     
     .localizacion_div{
         flex-direction: column;
@@ -117,6 +122,10 @@ main>h2{
     
     main>h2{
         font-size: 1.4rem;
+    }
+
+    main{
+        width:100vw;
     }
 
     .localizacion_div{
@@ -156,6 +165,10 @@ main>h2{
     
     main>h2{
         font-size: 1.3rem;
+    }
+
+    main{
+        width:100vw;
     }
 
     .localizacion_div{

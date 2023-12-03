@@ -11,6 +11,7 @@
     --colorSecundario:#FF9900;
     --colorNegro: #000000;
     --colorBlanco: #ffffff;
+    --colorFondo: #fbfbfb;
 
     --cursiva: italic;
 }
@@ -109,6 +110,7 @@ main>h2{
    display: flex;
    justify-content: center;
    align-items: center;
+   padding-bottom:2vh;
 
 }
 
@@ -151,6 +153,11 @@ main>h2{
 /*---------------------------------------- Estilos para 768px - 1024px  ----------------------------------------*/
 
 @media (768px < width <= 1024px){
+
+    main{
+        width:100vw;
+    }
+
     .actividad_div{
         width: 80vw;
     }
@@ -180,6 +187,11 @@ main>h2{
 /*---------------------------------------- Estilos para 540px - 768px ----------------------------------------*/
 
 @media (540px < width <= 768px){
+
+    main{
+        width:100vw;
+    }
+
     .actividad_div{
         width: 90vw;
     }
@@ -205,6 +217,11 @@ main>h2{
 /*---------------------------------------- Estilos para tamaños menores a 540px ----------------------------------------*/
 
 @media (width < 540px){
+
+    main{
+        width:100vw;
+    }
+
     .actividad_div{
         width: 90vw;
     }

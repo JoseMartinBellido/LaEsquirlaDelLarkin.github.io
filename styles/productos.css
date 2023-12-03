@@ -12,6 +12,7 @@
     --colorSecundario:#FF9900;
     --colorNegro: #000000;
     --colorBlanco: #ffffff;
+    --colorFondo: #fbfbfb;
 
     --cursiva: italic;
 }
@@ -25,7 +26,8 @@
     align-items: center;
     justify-content: flex-end;
 
-    margin: 3vh 5vw 2vh 0;
+    background-color: var(--colorFondo);
+    padding: 3vh 5vw 2vh 0;
 }
 
 .orden_productos_div>p{
@@ -232,6 +234,10 @@ section{
 
 /* Div enlacesPaginas para enlazar con más páginas en la búsqueda o en las actividades*/
 
+.enlaces_paginas{
+    padding-bottom: 2vh;
+}
+
 .enlaces_paginas, .enlaces_paginas a{
     text-decoration: none;
     margin-left: 0.3vw;
@@ -273,7 +279,7 @@ section{
     }
 
     main{
-        width:98vw;
+        width:100vw;
     }
 
     .productos{
@@ -314,6 +320,10 @@ section{
 
     aside{
         display: none;
+    }
+
+    main{
+        width:100vw;
     }
 
     .section{
@@ -357,6 +367,10 @@ section{
 
     aside{
         display: none;
+    }
+
+    main{
+        width:100vw;
     }
 
     .section{

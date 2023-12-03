@@ -12,6 +12,7 @@
     --colorSecundario:#FF9900;
     --colorNegro: #000000;
     --colorBlanco: #ffffff;
+    --colorFondo: #fbfbfb;
 
     --cursiva: italic;
 }
@@ -145,6 +146,7 @@ form{
     flex-wrap: wrap;
     margin-left:5vw;
     border-left: 2px black solid;
+    margin-bottom: 10vh;
 }
 
 
@@ -186,6 +188,10 @@ form input, form textarea{
 /*---------------------------------------- Estilos para 768px - 1024px ----------------------------------------*/
 
 @media (768px < width <= 1024px){
+
+    main{
+        width:100vw;
+    }
     
     main>h2{
         margin-bottom: 3vh;
@@ -224,6 +230,11 @@ form input, form textarea{
 /*---------------------------------------- Estilos para 540px - 768px ----------------------------------------*/
 
 @media (540px < width <= 768px){
+
+    main{
+        width:100vw;
+    }
+
     main>h2{
         width: 40vw;
         display: flex;
@@ -302,6 +313,11 @@ form input, form textarea{
 /*---------------------------------------- Estilos para tamaños menores a 540px ----------------------------------------*/
 
 @media (width <= 540px){
+
+    main{
+        width:100vw;
+    }
+
     main>h2{
         width: 40vw;
         display: flex;

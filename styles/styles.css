@@ -13,6 +13,7 @@
     --colorSecundario:#FF9900;
     --colorNegro: #000000;
     --colorBlanco: #ffffff;
+    --colorFondo: #fbfbfb;
 
     --cursiva: italic;
 }
@@ -30,6 +31,7 @@ header{
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
+    background-color: var(--colorFondo);
 
     border: 1px black solid;
 }
@@ -99,15 +101,15 @@ header{
 
 /* Buscador del comienzo de página */
 .buscador{
-    margin: auto 28vw auto 10vw;
-    width: 32vw;
+    margin: auto 23vw auto 10vw;
+    width: 37vw;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
     transition-timing-function: ease;
-
+    background-color: var(--colorBlanco);
 
     border:2px var(--colorNegro) solid;
     border-radius: 5px;
@@ -157,9 +159,22 @@ header{
 
 /* Buscador sólo para tablet y móvil */
 
+#contenedor_buscador_movil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width:100vw;
+    background-color: var(--colorFondo);
+}
+
 #buscador_movil_tablet{
     width:90vw;
     display:none;
+
+    border:2px var(--colorNegro) solid;
+    border-radius: 5px;
+    background-color: var(--colorBlanco);
 }
 
 
@@ -361,6 +376,8 @@ main{
     display: flex;
     justify-content: center;
     align-items: flex-start;
+
+    background-color: var(--colorFondo);
 }
 
 /*---------------------------------------- Ajustes footer ----------------------------------------*/
@@ -373,7 +390,7 @@ footer{
 
     background-color: var(--colorPrincipal);
 
-    margin-top:8vh;
+
     padding:4vh 10vw 3vh 10vw;
 }
 

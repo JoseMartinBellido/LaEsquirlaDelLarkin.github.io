@@ -13,6 +13,7 @@
     --colorSecundario:#FF9900;
     --colorNegro: #000000;
     --colorBlanco: #ffffff;
+    --colorFondo: #fbfbfb;
 
     --cursiva: italic;
 }
@@ -227,6 +228,7 @@ form{
 @media (768px < width <= 1024px){
 
     #main_inicio_sesion{
+        width:100vw;
         flex-wrap: wrap;
     }
 
@@ -296,6 +298,7 @@ form{
 @media (540px < width <= 768px){
 
     #main_inicio_sesion{
+        width: 100vw;
         flex-wrap: wrap;
     }
 
@@ -378,6 +381,7 @@ form{
 @media (width < 540px){
 
     #main_inicio_sesion{
+        width:100vw;
         flex-wrap: wrap;
     }
 
