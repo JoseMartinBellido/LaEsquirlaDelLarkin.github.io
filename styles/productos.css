@@ -165,7 +165,14 @@ section{
     background-color: var(--colorPrincipal);
     border: 2px var(--colorNegro) solid;
     border-radius:5px;
+}
 
+.productos{
+    background-color: rgb(230, 230, 230, 0.1);
+    border: 2px var(--colorNegro) solid;
+    border-radius:5px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 

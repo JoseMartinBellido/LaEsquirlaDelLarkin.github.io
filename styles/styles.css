@@ -23,6 +23,10 @@
     padding:0;
 
 }
+
+body{
+    background-color: var(--colorFondo);
+}
 /*---------------------------------------- Ajustes Header ----------------------------------------*/
 header{
     height:8rem;
@@ -31,7 +35,6 @@ header{
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    background-color: var(--colorFondo);
 
     border: 1px black solid;
 }
@@ -200,7 +203,7 @@ header{
 
 /* Enlace al inicio de sesión y al carrito de compra */
 .enlaces_iconos{
-    margin-right:2vw;
+    margin-right:1.2vw;
 }
 
 
@@ -251,14 +254,17 @@ header{
     align-items: center;
 
     background-color: var(--colorPrincipal);
-    width:2.8vw;
-    height:2.8vw;
+    padding: 0.4rem;
 
     border-radius: 50%;
 }
 
 .contenedor_iconos > img{
     width:1.8vw;
+}
+
+#btn-modo-claro, #btn-modo-oscuro{
+    cursor:pointer;
 }
 
 /*---------------------------------------- Ajustes Nav ----------------------------------------*/
@@ -369,6 +375,106 @@ nav a{
     }
 }
 
+/*---------------------------------------- Ajustes Pasafotos ----------------------------------------*/
+
+/* Pasafotos */
+
+.contenedor-pasafotos{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(230, 230, 230, 0.1);
+    padding: 1rem;
+    margin: 1rem auto;
+    border-radius: 15px;
+    
+    max-width: min(1080px, 100%);
+}
+
+.contenedor-pasafotos h2{
+    width: 100%;
+    font-family: var(--fuenteTitulos);
+    font-size: 1.5rem;
+
+}
+
+.contenedor-imagenes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.imagen{
+    display: none;
+}
+
+.imagen-activa {
+    display: block;
+}
+
+.imagen-activa img{
+    width: 100%;
+    height: auto;
+}
+
+/* Selector de imágenes inferior */
+.selector-imagen{
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.selector-imagen img{
+    width: 100%;
+}
+
+.selector-imagen a{
+    width: calc(60% / 7);
+}
+
+.selector-imagen-derecha{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+    width: 26%;
+    gap: 1rem;
+}
+
+.selector-imagen-derecha a{
+    width: calc(90% / 2);
+}
+
+.selector-imagen-derecha img{
+    width: 100%;
+    height:auto;
+    border: 2px black solid;
+}
+
+/* Botones de avance, retroceso, parada y continuar */
+
+.div-botones{
+    display: flex;
+    align-items: center;
+    height: 1rem;
+    padding: 1rem;
+    gap: 1.5rem;
+
+}
+
+.fondo-boton{
+    border: 2px black solid;
+    border-radius: 20%;
+    background-color: white;
+}
+
+#flecha-der, #flecha-izq, #btn-play, #btn-stop{
+    cursor: pointer;
+}
+
 
 /*---------------------------------------- Ajustes main ----------------------------------------*/
 
@@ -376,8 +482,6 @@ main{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-
-    background-color: var(--colorFondo);
 }
 
 /*---------------------------------------- Ajustes footer ----------------------------------------*/
