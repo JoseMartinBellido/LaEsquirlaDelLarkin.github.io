@@ -14,8 +14,10 @@ let productos = document.getElementsByClassName('producto_div');
 let tituloProductos = document.querySelectorAll('.producto_div h5');
 let precioProductos = document.querySelectorAll('.producto_div h6');
 
-// Contenedores de productos
+// Contenedores de productos y titulos
+let tituloDestacados = document.getElementById('titulo_destacados');
 let destacados = document.getElementById('destacados');
+let tituloNuevosLanzamientos = document.getElementById('titulo_nuevos_lanzamientos');
 let nuevosLanzamientos = document.getElementById('nuevos_lanzamientos');
 
 
@@ -36,7 +38,9 @@ function cambioModo(modo) {
         document.body.style.backgroundColor = 'var(--colorFondo)';
         tituloPrincipal.style.color = 'var(--colorNegro)';
         tituloPasafotos.style.color = 'var(--colorNegro)';
+        tituloDestacados.style.color = 'var(--colorNegro)';
         destacados.style.backgroundColor = 'var(--colorPrincipal)';
+        tituloNuevosLanzamientos.style.color = 'var(--colorNegro)';
         nuevosLanzamientos.style.backgroundColor = 'var(--colorPrincipal)';
         for (let producto of productos) {
             producto.style.backgroundColor = 'var(--colorFondo)';
@@ -52,7 +56,9 @@ function cambioModo(modo) {
         document.body.style.backgroundColor = 'var(--colorNegro)';
         tituloPrincipal.style.color = 'var(--colorFondo)';
         tituloPasafotos.style.color = 'var(--colorFondo)';
+        tituloDestacados.style.color = 'var(--colorBlanco)';
         destacados.style.backgroundColor = 'var(--colorPrincipalOscuro)';
+        tituloNuevosLanzamientos.style.color = 'var(--colorBlanco)';
         nuevosLanzamientos.style.backgroundColor = 'var(--colorPrincipalOscuro)';
         for (let producto of productos) {
             producto.style.backgroundColor = 'var(--colorPrincipal)';

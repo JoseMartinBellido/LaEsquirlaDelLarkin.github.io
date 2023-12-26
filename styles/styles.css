@@ -394,6 +394,7 @@ nav a{
     width: 100%;
     font-family: var(--fuenteTitulos);
     font-size: 1.5rem;
+    margin-bottom: 1rem;
 
 }
 
@@ -597,6 +598,10 @@ footer p{
     #lupa_busqueda_negra, #lupa_busqueda_blanca{
         width:1.6rem;
     }
+
+    .selector-imagen-derecha{
+        display: none;
+    }
 }
 
 /*---------------------------------------- Estilos para 540px - 768px  ----------------------------------------*/
@@ -722,6 +727,9 @@ footer p{
         margin-right:0.4vw;
     }
     
+    .selector-imagen-derecha{
+        display: none;
+    }
 }
 
 /*---------------------------------------- Estilos tamaños menores a 540px ----------------------------------------*/
@@ -844,6 +852,10 @@ footer p{
         width:1rem;
         margin-left:0.4vw;
         margin-right:0.4vw;
+    }
+
+    .selector-imagen-derecha{
+        display: none;
     }
     
 }
