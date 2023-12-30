@@ -139,7 +139,7 @@ btnFlechaDer.addEventListener('click', () => desplaza(1));
 
 // Botones de play y stop. Por defecto, comienza la web con el slider funcionando
 let funcionando = true;
-let sliderInterval = setInterval(desplaza, 6000, 1);
+let sliderInterval = setInterval(desplaza, 5000, 1);
 
 let btnParar = document.getElementById('btn-stop');
 let btnContinuar = document.getElementById('btn-play');
@@ -149,7 +149,7 @@ let btnContinuar = document.getElementById('btn-play');
 function playStop(booleano) {
     if (booleano && !funcionando) {
         funcionando = true;
-        sliderInterval = setInterval(desplaza, 6000, 1);
+        sliderInterval = setInterval(desplaza, 5000, 1);
     } else if (!booleano) {
         funcionando = false;
         clearInterval(sliderInterval);
