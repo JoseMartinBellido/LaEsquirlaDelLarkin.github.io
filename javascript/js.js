@@ -22,7 +22,7 @@ let nuevosLanzamientos = document.getElementById('nuevos_lanzamientos');
 
 
 // Comprobación de una cookie anterior para la página web
-if (document.cookie != null){
+if (document.cookie != ''){
     for (let cookies of document.cookie.split(';')){
         if (cookies.includes('mode')){
             let modo = cookies.split('=')[1];
